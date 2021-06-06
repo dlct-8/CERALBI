@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+	<title>Ceralbi - Tienda en línea</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Ceralbi - La tienda en línea">
+	<meta name="keywords" content="ceralbi, Encajas, eCommerce, cuadros, html">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Icon -->
+	<link href="../Imgs/LogoAzul.ico" rel="shortcut icon"/>
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,500,500i,600,600i,700,700i"
+  rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,600,600i,700,700i"
+  rel="stylesheet">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="../css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="../css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="../css/owl.carousel.css"/>
+	<link rel="stylesheet" href="../css/style.css"/>
+	<link rel="stylesheet" href="../css/animate.css"/>
+</head>
+<body>
+	<!-- Page Preloder -->
+	<div id="preloder">
+		<div class="loader"></div>
+	</div>
+
+	<!-- Header section -->
+	<header class="header-section">
+		<div class="container-fluid">
+			<!-- logo -->
+			<div class="site-logo">
+				<img src="../Imgs/LogoAzulW.png" alt="Logo Ceralbi">
+			</div>
+			<!-- responsive -->
+			<div class="nav-switch">
+				<i class="fa fa-bars"></i>
+			</div>
+			<div class="header-right">
+				<a href="Cart.html" class="card-bag"><img src="../Imgs/Icons/cart.png" alt="Carrito" width=40px>
+					<span>2</span></a>
+				<a href="#" class="search"><img src="../Imgs/Icons/search.png" alt="Buscar" width=40px></a>
+			</div>
+			<!-- site menu -->
+			<ul class="main-menu">
+				<li><a href="../Home.html">Inicio</a></li>
+				<li><a href="#">Hogar</a></li>
+				<li><a href="#">Oficina</a></li>
+				<li><a href="#">Ayuda</a></li>
+				<li><a href="../AboutUs.html">Nosotros</a></li>
+				<li><a href="../Contact.html">Contacto</a></li>
+			</ul>
+		</div>
+	</header>
+	<!-- Header section end -->
+
+
+	<!-- Page Info -->
+	<div class="page-info-section page-info">
+		<div class="container">
+			<div class="site-breadcrumb">
+				<a href="">Inicio</a> /
+				<a href="">Ventas</a> /
+				<a href="">Bolsa</a> /
+				<span>Carrito</span>
+			</div>
+			<img src="img/page-info-art.png" alt="" class="page-info-art">
+		</div>
+	</div>
+	<!-- Page Info end -->
+
+
+	<!-- Page -->
+	<div class="page-area cart-page spad">
+		<div class="container">
+			<form class="checkout-form">
+				<div class="row">
+					<div class="col-lg-6">
+						<h4 class="checkout-title">Dirección de Facturación</h4>
+						<div class="row">
+							<div class="col-md-6">
+								<input type="text" placeholder="Nombre *">
+							</div>
+							<div class="col-md-6">
+								<input type="text" placeholder="Apellido *">
+							</div>
+							<div class="col-md-12">
+								<input type="text" placeholder="Compañía">
+								<select>
+									<option>País *</option>
+									<option>Colombia</option>
+									<option>USA</option>
+									<option>Otro</option>
+								</select>
+								<input type="text" placeholder="Dirección *">
+								<input type="text">
+								<input type="text" placeholder="Código Postal *">
+								<select>
+									<option>Ciudad/Municipio *</option>
+								</select>
+								<input type="text" placeholder="Teléfono *">
+								<input type="email" placeholder="Correo Electrónico *">
+								<div class="checkbox-items">
+									<div class="ci-item">
+										<input type="checkbox" name="a" id="tandc">
+										<label for="tandc">Términos y Condiciones</label>
+									</div>
+									<div class="ci-item">
+										<input type="checkbox" name="b" id="newaccount">
+										<label for="newaccount">Crear Cuenta</label>
+										<input type="password" placeholder="Contraseña">
+									</div>
+									<div class="ci-item">
+										<input type="checkbox" name="c" id="newsletter">
+										<label for="newsletter">Suscribirse al Catálogo</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="order-card">
+							<div class="order-details">
+								<div class="od-warp">
+									<h4 class="checkout-title">Su Orden</h4>
+									<table class="order-table">
+										<thead>
+											<tr>
+												<th>Producto</th>
+												<th>Total</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Cuadro</td>
+												<td>$20.000</td>
+											</tr>
+											<tr>
+												<td>Subtotal</td>
+												<td>$20.000</td>
+											</tr>
+											<tr class="cart-subtotal">
+												<td>Envío</td>
+												<td>Gratis</td>
+											</tr>
+										</tbody>
+										<tfoot>
+											<tr class="order-total">
+												<th>Total</th>
+												<th>$20.000</th>
+											</tr>
+										</tfoot>
+									</table>
+								</div>
+								<div class="payment-method">
+									<div class="pm-item">
+										<input type="radio" name="pm" id="one">
+										<label for="one">Paypal</label>
+									</div>
+									<div class="pm-item">
+										<input type="radio" name="pm" id="two">
+										<label for="two">Contraentrega (Efectivo)</label>
+									</div>
+									<div class="pm-item">
+										<input type="radio" name="pm" id="three">
+										<label for="three">Tarjeta de Crédito</label>
+									</div>
+									<div class="pm-item">
+										<input type="radio" name="pm" id="four" checked>
+										<label for="four">Tarjeta Débito</label>
+									</div>
+								</div>
+							</div>
+							<button class="site-btn btn-full">Completar Orden</button>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<!-- Page -->
+
+
+	<!-- Footer section -->
+	<section class="footer-top-section home-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-8 col-sm-12">
+					<div class="footer-widget about-widget">
+						<img src="../Imgs/LogoAzulW.png" class="footer-logo" alt="">
+						<p>Acá va el texto con una descripción de la empresa.</p>
+						<div class="cards">
+							<img src="img/cards/5.png" alt="">
+							<img src="img/cards/4.png" alt="">
+							<img src="img/cards/3.png" alt="">
+							<img src="img/cards/2.png" alt="">
+							<img src="img/cards/1.png" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-4 col-sm-6">
+					<div class="footer-widget">
+						<h6 class="fw-title">Sitios</h6>
+						<ul>
+							<li><a href="Home.html">Inicio</a></li>
+							<li><a href="AboutUs.html">Nosotros</a></li>
+							<li><a href="#">Soporte</a></li>
+							<li><a href="#">Términos y Condiciones</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-4 col-sm-6">
+					<div class="footer-widget">
+						<h6 class="fw-title">Sitio</h6>
+						<ul>
+							<li><a href="#">Page</a></li>
+							<li><a href="#">Page</a></li>
+							<li><a href="#">Page</a></li>
+							<li><a href="#">Page</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-4 col-sm-6">
+					<div class="footer-widget">
+						<h6 class="fw-title">Envíos y Devoluciones</h6>
+						<ul>
+							<li><a href="#">Rastrear Órdenes</a></li>
+							<li><a href="#">Devoluciones</a></li>
+							<li><a href="#">Métodos de envío</a></li>
+							<li><a href="#">Ayuda</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-4 col-sm-6">
+					<div class="footer-widget">
+						<h6 class="fw-title">Contacto</h6>
+						<div class="text-box">
+							<p>Ceralbi Ltda </p>
+							<p>Una dirección</p>
+							<p>+57 312 000 0000</p>
+							<p>ceralbi@ceralbi.com</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Footer section end -->
+
+		<!-- Copyright -->
+	<footer class="footer-section">
+		<div class="container">
+			<p class="copyright">
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos los derechos reservados | Diseño por <a href="#" target="_blank">Ceralbi</a>
+</p>
+		</div>
+	</footer>
+	<!-- End -->
+
+
+	<!--====== Javascripts & Jquery ======-->
+	<script src="../js/jquery-3.2.1.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/owl.carousel.min.js"></script>
+	<script src="../js/mixitup.min.js"></script>
+	<script src="../js/sly.min.js"></script>
+	<script src="../js/jquery.nicescroll.min.js"></script>
+	<script src="../js/main.js"></script>
+    </body>
+</html>
