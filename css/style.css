@@ -593,7 +593,8 @@ ol {
 }
 
 .featured-item img {
-	min-width: 100%;
+	height:290px;
+	width:100%; //Ensancha imagen, corregir
 }
 
 .featured-item .site-btn {
@@ -667,7 +668,7 @@ ol {
 }
 
 .product-item figure img {
-	min-width: 100%;
+	min-width: 100%; //Cuadricula
 }
 
 .product-item figure:after {
@@ -772,6 +773,19 @@ ol {
 	-ms-transform: translateY(0%);
 	transform: translateY(0%);
 }
+
+/*------------------
+ About Us Images
+ -------------------*/
+ .imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+ }
+ /* Circulito */
+ img.avatar {
+   width: 15%;
+   border-radius: 50%;
+ }
 
 /*------------------
   Footer Section
