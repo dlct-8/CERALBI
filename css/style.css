@@ -774,6 +774,14 @@ ol {
 	-ms-transform: translateY(0%);
 	transform: translateY(0%);
 }
+/*------------------
+ Responsive Images
+ -------------------*/
+ .responsive {
+  width: 50%;
+  height: auto;
+	min-width:350px;
+}
 
 /*------------------
  About Us Images
