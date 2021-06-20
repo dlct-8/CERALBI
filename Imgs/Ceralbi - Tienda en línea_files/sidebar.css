@@ -47,13 +47,13 @@ body {
 }
 
 #sidebar header a {
-  color: #EFEFEF;
+  color: #fff;
   display: block;
   text-decoration: none;
 }
 
 #sidebar header a:hover {
-  color: #EFEFEF;
+  color: #fff;
 }
 
 #sidebar .nav{
@@ -62,8 +62,8 @@ body {
 
 #sidebar .nav a{
   background: none;
-  border-bottom: 1px solid #7A7D7D;
-  color: #EFEFEF;
+  border-bottom: 1px solid #455A64;
+  color: #CFD8DC;
   font-size: 14px;
   padding: 16px 24px;
 }
