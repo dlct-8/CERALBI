@@ -1,0 +1,100 @@
+/*otro*/
+html,body {
+	height: 100%;
+}
+body {
+	height: 100%;
+	font-family: 'Open Sans', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	font-weight: 500;
+	color: #001B2E;
+}
+.global-container{
+	height:100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #EFEFEF;
+  margin-top: 5%;/*cuerpo*/
+}
+
+form{
+	padding-top: 2px;
+	font-size: 14px;
+	margin-top: 30px;
+}
+
+.card-title{ font-weight:300; }
+
+.btn{
+	font-size: 14px;
+	margin-top:20px;
+}
+
+
+.login-form{
+	width:330px;
+	margin:20px;
+}
+
+.sign-up{
+	text-align:center;
+	padding:20px 0 0;
+}
+
+.alert{
+	margin-bottom:-30px;
+	font-size: 13px;
+	margin-top:20px;
+}
+.subbt:hover {
+  background-color: #05477A;
+}
+p.centrado {
+  text-align: center;
+}
+/* buttons */
+
+.site-btn {
+	display: inline-block;
+	text-align: center;
+	font-size: 14px;
+	color: #fff;
+	padding: 12px 30px;
+	min-width: 138px;
+	font-weight: 500;
+	border: none;
+	background: #001B2E;
+	cursor: pointer;
+	line-height: normal;
+	-webkit-transition: all 0.3s ease 0s;
+	-o-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+}
+
+.site-btn:hover {
+	color: #fff;
+}
+
+.site-btn.btn-line {
+	background: transparent;
+	border: 2px solid #001B2E;
+	color: #001B2E;
+	padding: 12px 20px;
+}
+
+.site-btn.btn-line:hover {
+	background: #05477A;
+	border: 2px solid #05477A;
+	color: #fff;
+}

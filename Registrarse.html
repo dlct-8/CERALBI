@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<title>Modulos</title>
+	<title>Login</title>
 	<meta charset="UTF-8">
 	<meta name="description" content="Ceralbi - La tienda en línea">
 	<meta name="keywords" content="ceralbi, Encajas, eCommerce, cuadros, html">
@@ -14,12 +14,13 @@
   rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,600,600i,700,700i"
   rel="stylesheet">
-
+  <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
 	<!-- Stylesheets -->
 	<link rel="stylesheet" href="css/bootstrap.min.css"/>
 	<link rel="stylesheet" href="css/font-awesome.min.css"/>
 	<link rel="stylesheet" href="css/owl.carousel.css"/>
 	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/login.css"/>
 	<link rel="stylesheet" href="css/animate.css"/>
 </head>
 <body>
@@ -29,7 +30,7 @@
 	</div>
 
 	<!-- Header section -->
-	<header class="header-section">
+	<header class="header-section"  style="background-color:#05477A">
 		<div class="container-fluid">
 			<!-- logo -->
 			<div class="site-logo">
@@ -56,49 +57,40 @@
 	</header>
 	<!-- Header section end -->
 
+	<div class="global-container">
+	<div class="card login-form">
+	<div class="card-body">
 
-	<!-- About Us -->
-	<div class="card-warp">
-	  <div class="container" style="text-align:center">
-			<br>
-	         <h1>Ventas</h1>
-					 <br>
-	          <div>
-	            <a class="site-btn btn-full" href="">Inicio</a>
-	          </div>
-          <h3>Ingresar Productos</h3>
-            <table>
-    					<thead>
-    						<tr>
-    							<th>Producto</th>
-    							<th>Precio</th>
-    							<th>Cantidad</th>
-    							<th>Tamaños</th>
-    						</tr>
-    					</thead>
-    					<tbody>
-    						<tr>
-    							<td>
-    								<img src="img/product/cart.jpg" alt="">
-    								<div class="pc-title">
-    									<h4>Cuadro</h4>
+		<h3 class="card-title text-center">Regístrate</h3>
+		<p class="centrado">
+			<img src="Imgs\LogoBlanco.png" style="width:36%; height:40%"/>
+		</p>
+		<div class="card-text">
+			<!--
+			<div class="alert alert-danger alert-dismissible fade show" role="alert">Incorrect username or password.</div> -->
+			<form>
+				<!-- to error: add class "has-danger" -->
+				<div class="form-group">
+					<label for="exampleInputEmail1">Ingresa usuario</label>
+					<input type="email" class="form-control form-control-sm" id="exampleInputEmail1" aria-describedby="emailHelp">
+				</div>
+				<div class="form-group">
+					<label for="exampleInputPassword1">Contraseña</label>
+					<a href="#" style="float:right;font-size:12px;">Recuperar contraseña?</a>
+					<input type="password" class="form-control form-control-sm" id="exampleInputPassword1">
+				</div>
+				<p class="centrado">
+				<a href="Home.html"><button type="submit" class="site-btn" style="background-color: #05477A;">Crear cuenta</button></a>
+			</p>
 
-    								</div>
-    							</td>
-    							<td class="price-col">$20.000</td>
-    							<td class="quy-col">
-    								<div class="quy-input">
-    									<span>Ctda</span>
-    									<input type="number" value="01">
-    								</div>
-    							</td>
-    							<td class="total-col">$20.000</td>
-    						</tr>
-    					</tbody>
-    				</table>
-	  </div>
+				<div class="sign-up">
+				 <a href="Home.html">Iniciar sesión</a>
+				</div>
+			</form>
+		</div>
 	</div>
-	<!-- About Us end -->
+</div>
+</div>
 
 
 
@@ -187,5 +179,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos
 	<script src="js/sly.min.js"></script>
 	<script src="js/jquery.nicescroll.min.js"></script>
 	<script src="js/main.js"></script>
+	<script src="js/login.js"></script>
     </body>
 </html>
