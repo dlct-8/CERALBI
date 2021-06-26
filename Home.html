@@ -61,7 +61,7 @@
 
 			<!-- Right-aligned links -->
 			<div class="topnav-right">
-				<a href="Help/CustomerServices.html">Mi Cuenta <i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+				<a href="Customers/Login.html">Mi Cuenta <i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
 				<div class="search-container">
     			<form action="/action_page.php">
       			<input type="text" placeholder="Buscar..." name="search">
@@ -72,8 +72,9 @@
 			</div>
 
 		</div>
+	</header>
 	<!-- Header section end -->
-</header>
+
 
 <body>
 
@@ -322,78 +323,58 @@
 
 
 	<!-- Footer section -->
-	<section class="footer-top-section home-footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-3 col-md-8 col-sm-12">
-					<div class="footer-widget about-widget">
-						<img src="Imgs/LogoAzulW.png" class="footer-logo" alt="">
-						<p>Acá va el texto con una descripción de la empresa.</p>
-						<div class="cards">
-							<img src="img/cards/5.png" alt="">
-							<img src="img/cards/4.png" alt="">
-							<img src="img/cards/3.png" alt="">
-							<img src="img/cards/2.png" alt="">
-							<img src="img/cards/1.png" alt="">
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-2 col-md-4 col-sm-6">
-					<div class="footer-widget">
-						<h6 class="fw-title">Sitios</h6>
-						<ul>
-							<li><a href="Home.html">Inicio</a></li>
-							<li><a href="AboutUs.html">Nosotros</a></li>
-							<li><a href="#">Soporte</a></li>
-							<li><a href="#">Términos y Condiciones</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-lg-2 col-md-4 col-sm-6">
-					<div class="footer-widget">
-						<h6 class="fw-title">Sitio</h6>
-						<ul>
-							<li><a href="NavMap.html">Mapa de Navegación</a></li>
-							<li><a href="ErrorPages/Error500.html">Error 500</a></li>
-							<li><a href="ErrorPages/Error404.html">Error 404</a></li>
-							<li><a href="#">Page</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-lg-2 col-md-4 col-sm-6">
-					<div class="footer-widget">
-						<h6 class="fw-title">Envíos y Devoluciones</h6>
-						<ul>
-							<li><a href="#">Rastrear Órdenes</a></li>
-							<li><a href="#">Devoluciones</a></li>
-							<li><a href="#">Métodos de envío</a></li>
-							<li><a href="#">Ayuda</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-lg-2 col-md-4 col-sm-6">
-					<div class="footer-widget">
-						<h6 class="fw-title">Contacto</h6>
-						<div class="text-box">
-							<p>Ceralbi Ltda </p>
-							<p>Una dirección</p>
-							<p>+57 312 000 0000</p>
-							<p>ceralbi@ceralbi.com</p>
-						</div>
-					</div>
-				</div>
+	<div class="footer-top">
+		<div class="row">
+			<div class="col-md-4 pr-md-5">
+				<img src="Imgs/LogoAzulW.png" class="footer-logo" alt="Logo Ceralbi">
+				<p class="light">Destacados como desarrolladores de software a la medida
+					de aplicaciones web y móviles para todas las industrias.</p>
+			</div>
+			<div class="col-md">
+				<ul class="list-unstyled nav-links">
+					<li><a href="Home.html">Inicio</a></li>
+					<li><a href="AboutUs.html">Nosotros</a></li>
+					<li><a href="Help/Help.html">Ayuda</a></li>
+					<li><a href="#">Contacto</a></li>
+				</ul>
+			</div>
+			<div class="col-md">
+				<ul class="list-unstyled nav-links">
+					<li><a href="Customers/Login.html">Mi Cuenta</a></li>
+					<li><a href="StoreAdmin/Admin.html">Administrador</a></li>
+					<li><a href="NavMap.html">Mapa de Navegación</a></li>
+					<li><a href="ErrorPages/Error404.html">Error 404</a></li>
+					<li><a href="ErrorPages/Error500.html">Error 500</a></li>
+				</ul>
+			</div>
+			<div class="col-md">
+				<ul class="list-unstyled nav-links">
+					<li><a href="#">Política de Privacidad</a></li>
+					<li><a href="#">Términos &amp; Condiciones</a></li>
+					<li><a href="#">Socios</a></li>
+				</ul>
+			</div>
+			<div class="col-md text-md-center">
+				<ul class="social">
+					<li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+					<li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+					<li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+					<li><a href="#"><i class="fab fa-pinterest-square"></i></a></li>
+				</ul>
+				<br><br><p class=""><a href="#" class="btn btn-footer">Contact Us</a></p>
 			</div>
 		</div>
-		</di>
-	</section>
+	</div>
+
 	<!-- Footer section end -->
 
-		<!-- Copyright -->
+	<!-- Copyright -->
 	<footer class="footer-section">
 		<div class="container">
 			<p class="copyright">
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos los derechos reservados | Diseño por <a href="#" target="_blank">Ceralbi</a>
-</p>
+				Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos los derechos reservados | Diseñado por
+				<img src="Imgs/LogoCR.png" alt="Logo Ceralbi" class="copyright">
+			</p>
 		</div>
 	</footer>
 	<!-- End -->
@@ -403,9 +384,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos
 	<script src="js/actions.js"></script>
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-
-
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/mixitup.min.js"></script>
 	<script src="js/sly.min.js"></script>

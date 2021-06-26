@@ -670,61 +670,40 @@
 }
 
 /*------------------
-	Other Pages
----------------------
-========================*/
+	Breadcrumbs
+---------------------*/
 
-.page-info-section {
-	background: #05477A;
+/* Style the list */
+ul.breadcrumb {
+ padding: 30px 30px;
+ list-style: none;
+ background-color: #05477A;
 }
 
-.page-info-section.page-info-big {
-	padding: 135px 0;
+/* Display list items side by side */
+ul.breadcrumb li {
+ display: inline;
+ font-size: 18px;
+ color: #EFEFEF;
 }
 
-.page-info-section.page-info {
-	padding: 87px 0;
+/* Slash symbol (/) */
+ul.breadcrumb li+li:before {
+ padding: 8px;
+ color: #EFEFEF;
+ content: "/\00a0";
 }
 
-.page-info-section h2 {
-	font-size: 72px;
-	font-weight: 400;
-	line-height: normal;
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+ color: #EFEFEF;
+ text-decoration: none;
 }
 
-.page-info-section .container {
-	position: relative;
-}
-
-.page-info-section .page-info-art {
-	position: absolute;
-	bottom: -110px;
-	right: 50px;
-}
-
-.site-breadcrumb {
-	color: #7A7D7D;
-}
-
-.site-breadcrumb a {
-	font-size: 18px;
-	color: #7A7D7D;
-}
-
-.site-breadcrumb span {
-	color: #EFEFEF;
-	weight:bold;
-}
-
-.site-pagination a,
-.site-pagination span {
-	color: #EFEFEF;
-	font-size: 14px;
-}
-
-.site-pagination a.active,
-.site-pagination span.active {
-	color: #001B2E;
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+ color: #1D8ADE;
+ text-decoration: none;
 }
 
 /*------------------

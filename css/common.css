@@ -326,12 +326,6 @@ ol {
 }
 
 /*---------------------
-  Hero slider
------------------------*/
-
-
-
-/*---------------------
   Commom elements
 -----------------------*/
 
@@ -397,64 +391,54 @@ ol {
   Footer Section
 ---------------------*/
 
-.footer-top-section {
-	padding-top: 25px;
-	padding-bottom: 25px;
+.footer-top {
+	padding: 40px 30px;
+	padding-bottom: 20px;
 	background: #05477A;
 }
 
-.footer-top-section.home-footer {
-	padding-bottom: 0;
+.footer-top a {
+ -webkit-transition:.3s all ease;
+ -o-transition:.3s all ease;
+ transition:.3s all ease
+}
+.footer-top a,
+.footer-top a:hover {
+ text-decoration:none!important
 }
 
-.footer-widget .fw-title {
-	text-transform: uppercase;
-	font-weight: 600;
-	color: #EFEFEF;
-	margin-bottom: 50px;
-	letter-spacing: -0.2px;
-	text-decoration: none;
+.footer-top .footer-logo {
+ width: 70%;
+ padding-left: 70px;
+}
+.footer-top .nav-links li {
+ margin-bottom:10px
+}
+.footer-top .nav-links li a {
+ color:#EFEFEF
+}
+.footer-top .nav-links li a:hover {
+ color:#EFEFEF
+}
+.footer-top .btn.btn-footer {
+ background-color:#EFEFEF;
+ color:#001B2E;
+ border-radius:30px;
+ border:none;
+ padding:10px 20px;
 }
 
-.footer-widget ul {
-	list-style: none;
+.footer-top .social li {
+ display:inline-block;
+ float: left;
 }
-
-.footer-widget ul li {
-	font-size: 14px;
-	display: block;
-	margin-bottom: 10px;
-	color: #EFEFEF;
-	opacity: 0.55;
-	text-decoration: none;
+.footer-top .social li a {
+ color:#EFEFEF;
+ padding-right: 7px;
+ font-size: 30px;
 }
-
-.footer-widget ul li:last-child {
-	margin-bottom: 0;
-}
-
-.footer-widget ul li a {
-	color: #EFEFEF;
-}
-
-.footer-widget .text-box p {
-	margin-bottom: 18px;
-}
-
-.footer-widget .text-box p:last-child {
-	margin-bottom: 0;
-}
-
-.about-widget .footer-logo {
-	margin-bottom: 50px;
-}
-
-.about-widget p {
-	margin-bottom: 40px;
-}
-
-.about-widget .cards img {
-	margin-right: 1px;
+.footer-top .social li a:hover {
+ color:#EFEFEF
 }
 
 /*------------------

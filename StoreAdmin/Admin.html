@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zxx">
 <head>
-	<title>Ceralbi - Tienda en línea</title>
+	<title>Ceralbi - Administrador</title>
 	<meta charset="UTF-8">
 	<meta name="description" content="Ceralbi - La tienda en línea">
 	<meta name="keywords" content="ceralbi, Encajas, eCommerce, cuadros, html">
@@ -14,14 +14,13 @@
 	rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,600,600i,700,700i"
 	rel="stylesheet">
-	<link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
 
 	<!-- Stylesheets -->
-	<link rel="stylesheet" href="../css/sidebar.css"/>
-	<link rel="stylesheet" href="../css/style.css"/>
+	<link rel="stylesheet" href="../css/sidenav.css"/>
+	<link rel="stylesheet" href="../css/common.css"/>
+	<link rel="stylesheet" href="../css/main.css"/>
 	<link rel="stylesheet" href="../css/bootstrap.min.css"/>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" type="text/css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css" type="text/css">
+	<script src="https://kit.fontawesome.com/cfe8b23fc4.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
@@ -30,93 +29,419 @@
 		<div class="loader"></div>
 	</div>
 
-<div id="viewport">
-  <!-- Sidebar -->
-  <div id="sidebar">
-    <header>
-			<div>
-				<img src="../Imgs/LogoAzulW.png" alt="Logo Ceralbi"><br>
-			</div>
-      <a href="#">Bienvenido Administrador</a>
-    </header>
-    <ul class="nav">
-      <li>
-        <a href="#">
-          <i class="zmdi zmdi-view-dashboard"></i> Dashboard
-        </a>
-      </li>
-      <li>
-        <a href="#tabinfo" data-toggle="tab">
-          <i class="zmdi zmdi-link"></i> Agregar Productos
-        </a>
-      </li>
-			<li>
-        <a href="#">
-          <i class="zmdi zmdi-link"></i> Editar Productos
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <i class="zmdi zmdi-widgets"></i> Tendencias de Ventas
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <i class="zmdi zmdi-calendar"></i> Reportes
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <i class="zmdi zmdi-settings"></i> Facturas
-        </a>
-      </li>
-      <li>
-        <a href="../Contact.html">
-          <i class="zmdi zmdi-comment-more"></i> Contacto
-        </a>
-      </li>
-			<li>
-				<!-- Copyright -->
-			<footer class="footer-section">
-				<div class="container">
-					<p class="copyright">
-		Copyright &copy;<script>document.write(new Date().getFullYear());</script>
-		<br>Todos los derechos reservados
-		<br>Diseño por <a href="#" target="_blank">Ceralbi</a>
-		</p>
-				</div>
-			</footer>
-			<!-- End -->
-			</li>
-    </ul>
-  </div>
-  <!-- Content -->
-  <div id="content">
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <ul class="nav navbar-nav navbar-right">
-          <li>
-            <a href="#"><i class="zmdi zmdi-notifications text-danger"></i>
-            </a>
-          </li>
-          <li><a href="#">Usuario</a></li>
-        </ul>
-      </div>
-    </nav>
-    <div class="container-fluid">
-      <h1>Administrador Ceralbi</h1>
-      <p>
-        <code>#content</code>.
-      </p>
+	<!-- Vertical Tabs -->
+
+<div class="tab">
+	<img src="../Imgs/LogoAzulW.png" alt="Logo Ceralbi">
+	<div class="admin">
+		Administrador
+		<br><a href="#">Salir de la Cuenta</a>
+	</div>
+ 	<button class="tablinks" onclick="openTab(event, 'dashboard')"><i class="fas fa-tachometer-alt"></i>
+		Dashboard</button>
+ 	<button class="tablinks" onclick="openTab(event, 'add')"><i class="fas fa-plus-circle"></i>
+		Agregar Productos</button>
+ 	<button class="tablinks" onclick="openTab(event, 'edit')"><i class="fas fa-edit"></i>
+		Editar Productos</button>
+	<button class="tablinks" onclick="openTab(event, 'bill')"><i class="fas fa-file-invoice-dollar"></i>
+		Facturas</button>
+	<button class="tablinks" onclick="openTab(event, 'inventory')"><i class="fas fa-boxes"></i>
+		Inventario</button>
+	<button class="tablinks" onclick="openTab(event, 'sales')"><i class="fas fa-chart-line"></i>
+		Tendencias de Ventas</button>
+	<button class="tablinks" onclick="openTab(event, 'reports')"><i class="fas fa-file-contract"></i>
+		Reportes</button>
+	<button class="tablinks" onclick="openTab(event, 'contact')"><i class="fas fa-comment-dots"></i>
+		Contacto</button>
+	<!-- Copyright -->
+	<footer class="footer-section">
+		<div class="container">
+			<p class="copyright">
+				Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos los derechos reservados | Diseñado por
+				<img src="../Imgs/LogoCR.png" alt="Logo Ceralbi" class="copyright">
+	  </div>
+	</footer>
+</div>
+
+<div>
+
+</div>
+<div id="dashboard" class="tabcontent">
+ <h3>Dashboard</h3>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p class="text-white mt-5 mb-5">Welcome back, <b>Admin</b></p>
+                </div>
+            </div>
+            <!-- row -->
+            <div class="row tm-content-row">
+                <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 tm-block-col">
+                    <div class="tm-bg-primary-dark tm-block"><div style="position: absolute; inset: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;" class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div><div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div>
+                        <h2 class="tm-block-title">Latest Hits</h2>
+                        <canvas id="lineChart" style="display: block; width: 465px; height: 232px;" class="chartjs-render-monitor" width="465" height="232"></canvas>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 tm-block-col">
+                    <div class="tm-bg-primary-dark tm-block"><div style="position: absolute; inset: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;" class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div><div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div>
+                        <h2 class="tm-block-title">Performance</h2>
+                        <canvas id="barChart" style="display: block; width: 465px; height: 232px;" class="chartjs-render-monitor" width="465" height="232"></canvas>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 tm-block-col">
+                    <div class="tm-bg-primary-dark tm-block tm-block-taller">
+                        <h2 class="tm-block-title">Storage Information</h2>
+                        <div id="pieChartContainer" style="height: 300px;"><div style="position: absolute; inset: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;" class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div><div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div>
+                            <canvas id="pieChart" class="chartjs-render-monitor" style="display: block; width: 465px; height: 300px;" width="465" height="300"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 tm-block-col">
+                    <div class="tm-bg-primary-dark tm-block tm-block-taller tm-block-overflow">
+                        <h2 class="tm-block-title">Notification List</h2>
+                        <div class="tm-notification-items">
+                            <div class="media tm-notification-item">
+                                <div class="tm-gray-circle"><img src="img/notification-01.jpg" alt="Avatar Image" class="rounded-circle"></div>
+                                <div class="media-body">
+                                    <p class="mb-2"><b>Jessica</b> and <b>6 others</b> sent you new <a href="#" class="tm-notification-link">product updates</a>. Check new orders.</p>
+                                    <span class="tm-small tm-text-color-secondary">6h ago.</span>
+                                </div>
+                            </div>
+                            <div class="media tm-notification-item">
+                                <div class="tm-gray-circle"><img src="img/notification-02.jpg" alt="Avatar Image" class="rounded-circle"></div>
+                                <div class="media-body">
+                                    <p class="mb-2"><b>Oliver Too</b> and <b>6 others</b> sent you existing <a href="#" class="tm-notification-link">product updates</a>. Read more reports.</p>
+                                    <span class="tm-small tm-text-color-secondary">6h ago.</span>
+                                </div>
+                            </div>
+                            <div class="media tm-notification-item">
+                                <div class="tm-gray-circle"><img src="img/notification-03.jpg" alt="Avatar Image" class="rounded-circle"></div>
+                                <div class="media-body">
+                                    <p class="mb-2"><b>Victoria</b> and <b>6 others</b> sent you <a href="#" class="tm-notification-link">order updates</a>. Read order information.</p>
+                                    <span class="tm-small tm-text-color-secondary">6h ago.</span>
+                                </div>
+                            </div>
+                            <div class="media tm-notification-item">
+                                <div class="tm-gray-circle"><img src="img/notification-01.jpg" alt="Avatar Image" class="rounded-circle"></div>
+                                <div class="media-body">
+                                    <p class="mb-2"><b>Laura Cute</b> and <b>6 others</b> sent you <a href="#" class="tm-notification-link">product records</a>.</p>
+                                    <span class="tm-small tm-text-color-secondary">6h ago.</span>
+                                </div>
+                            </div>
+                            <div class="media tm-notification-item">
+                                <div class="tm-gray-circle"><img src="img/notification-02.jpg" alt="Avatar Image" class="rounded-circle"></div>
+                                <div class="media-body">
+                                    <p class="mb-2"><b>Samantha</b> and <b>6 others</b> sent you <a href="#" class="tm-notification-link">order stuffs</a>.</p>
+                                    <span class="tm-small tm-text-color-secondary">6h ago.</span>
+                                </div>
+                            </div>
+                            <div class="media tm-notification-item">
+                                <div class="tm-gray-circle"><img src="img/notification-03.jpg" alt="Avatar Image" class="rounded-circle"></div>
+                                <div class="media-body">
+                                    <p class="mb-2"><b>Sophie</b> and <b>6 others</b> sent you <a href="#" class="tm-notification-link">product updates</a>.</p>
+                                    <span class="tm-small tm-text-color-secondary">6h ago.</span>
+                                </div>
+                            </div>
+                            <div class="media tm-notification-item">
+                                <div class="tm-gray-circle"><img src="img/notification-01.jpg" alt="Avatar Image" class="rounded-circle"></div>
+                                <div class="media-body">
+                                    <p class="mb-2"><b>Lily A</b> and <b>6 others</b> sent you <a href="#" class="tm-notification-link">product updates</a>.</p>
+                                    <span class="tm-small tm-text-color-secondary">6h ago.</span>
+                                </div>
+                            </div>
+                            <div class="media tm-notification-item">
+                                <div class="tm-gray-circle"><img src="img/notification-02.jpg" alt="Avatar Image" class="rounded-circle"></div>
+                                <div class="media-body">
+                                    <p class="mb-2"><b>Amara</b> and <b>6 others</b> sent you <a href="#" class="tm-notification-link">product updates</a>.</p>
+                                    <span class="tm-small tm-text-color-secondary">6h ago.</span>
+                                </div>
+                            </div>
+                            <div class="media tm-notification-item">
+                                <div class="tm-gray-circle"><img src="img/notification-03.jpg" alt="Avatar Image" class="rounded-circle"></div>
+                                <div class="media-body">
+                                    <p class="mb-2"><b>Cinthela</b> and <b>6 others</b> sent you <a href="#" class="tm-notification-link">product updates</a>.</p>
+                                    <span class="tm-small tm-text-color-secondary">6h ago.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 tm-block-col">
+                    <div class="tm-bg-primary-dark tm-block tm-block-taller tm-block-scroll">
+                        <h2 class="tm-block-title">Orders List</h2>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">ORDER NO.</th>
+                                    <th scope="col">STATUS</th>
+                                    <th scope="col">OPERATORS</th>
+                                    <th scope="col">LOCATION</th>
+                                    <th scope="col">DISTANCE</th>
+                                    <th scope="col">START DATE</th>
+                                    <th scope="col">EST DELIVERY DUE</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row"><b>#122349</b></th>
+                                    <td>
+                                        <div class="tm-status-circle moving">
+                                        </div>Moving
+                                    </td>
+                                    <td><b>Oliver Trag</b></td>
+                                    <td><b>London, UK</b></td>
+                                    <td><b>485 km</b></td>
+                                    <td>16:00, 12 NOV 2018</td>
+                                    <td>08:00, 18 NOV 2018</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><b>#122348</b></th>
+                                    <td>
+                                        <div class="tm-status-circle pending">
+                                        </div>Pending
+                                    </td>
+                                    <td><b>Jacob Miller</b></td>
+                                    <td><b>London, UK</b></td>
+                                    <td><b>360 km</b></td>
+                                    <td>11:00, 10 NOV 2018</td>
+                                    <td>04:00, 14 NOV 2018</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><b>#122347</b></th>
+                                    <td>
+                                        <div class="tm-status-circle cancelled">
+                                        </div>Cancelled
+                                    </td>
+                                    <td><b>George Wilson</b></td>
+                                    <td><b>London, UK</b></td>
+                                    <td><b>340 km</b></td>
+                                    <td>12:00, 22 NOV 2018</td>
+                                    <td>06:00, 28 NOV 2018</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><b>#122346</b></th>
+                                    <td>
+                                        <div class="tm-status-circle moving">
+                                        </div>Moving
+                                    </td>
+                                    <td><b>William Aung</b></td>
+                                    <td><b>London, UK</b></td>
+                                    <td><b>218 km</b></td>
+                                    <td>15:00, 10 NOV 2018</td>
+                                    <td>09:00, 14 NOV 2018</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><b>#122345</b></th>
+                                    <td>
+                                        <div class="tm-status-circle pending">
+                                        </div>Pending
+                                    </td>
+                                    <td><b>Harry Ryan</b></td>
+                                    <td><b>London, UK</b></td>
+                                    <td><b>280 km</b></td>
+                                    <td>15:00, 11 NOV 2018</td>
+                                    <td>09:00, 17 NOV 2018</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><b>#122344</b></th>
+                                    <td>
+                                        <div class="tm-status-circle pending">
+                                        </div>Pending
+                                    </td>
+                                    <td><b>Michael Jones</b></td>
+                                    <td><b>London, UK</b></td>
+                                    <td><b>218 km</b></td>
+                                    <td>18:00, 12 OCT 2018</td>
+                                    <td>06:00, 18 OCT 2018</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><b>#122343</b></th>
+                                    <td>
+                                        <div class="tm-status-circle moving">
+                                        </div>Moving
+                                    </td>
+                                    <td><b>Timmy Davis</b></td>
+                                    <td><b>London, UK</b></td>
+                                    <td><b>218 km</b></td>
+                                    <td>12:00, 10 OCT 2018</td>
+                                    <td>08:00, 18 OCT 2018</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><b>#122342</b></th>
+                                    <td>
+                                        <div class="tm-status-circle moving">
+                                        </div>Moving
+                                    </td>
+                                    <td><b>Oscar Phyo</b></td>
+                                    <td><b>London, UK</b></td>
+                                    <td><b>420 km</b></td>
+                                    <td>15:30, 06 OCT 2018</td>
+                                    <td>09:30, 16 OCT 2018</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><b>#122341</b></th>
+                                    <td>
+                                        <div class="tm-status-circle moving">
+                                        </div>Moving
+                                    </td>
+                                    <td><b>Charlie Brown</b></td>
+                                    <td><b>London, UK</b></td>
+                                    <td><b>300 km</b></td>
+                                    <td>11:00, 10 OCT 2018</td>
+                                    <td>03:00, 14 OCT 2018</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><b>#122340</b></th>
+                                    <td>
+                                        <div class="tm-status-circle cancelled">
+                                        </div>Cancelled
+                                    </td>
+                                    <td><b>Wilson Cookies</b></td>
+                                    <td><b>London, UK</b></td>
+                                    <td><b>218 km</b></td>
+                                    <td>17:30, 12 OCT 2018</td>
+                                    <td>08:30, 22 OCT 2018</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><b>#122339</b></th>
+                                    <td>
+                                        <div class="tm-status-circle moving">
+                                        </div>Moving
+                                    </td>
+                                    <td><b>Richard Clamon</b></td>
+                                    <td><b>London, UK</b></td>
+                                    <td><b>150 km</b></td>
+                                    <td>15:00, 12 OCT 2018</td>
+                                    <td>09:20, 26 OCT 2018</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="tm-footer row tm-mt-small">
+            <div class="col-12 font-weight-light">
+                <p class="text-center text-white mb-0 px-4 small">
+                    Copyright © <b>2018</b> All rights reserved.
+
+                    Design: <a rel="nofollow noopener" href="https://templatemo.com" class="tm-footer-link">Template Mo</a>
+                </p>
+            </div>
+        </footer>
     </div>
-  </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- https://jquery.com/download/ -->
+    <script src="js/moment.min.js"></script>
+    <!-- https://momentjs.com/ -->
+    <script src="js/Chart.min.js"></script>
+    <!-- http://www.chartjs.org/docs/latest/ -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- https://getbootstrap.com/ -->
+    <script src="js/tooplate-scripts.js"></script>
+    <script>
+        Chart.defaults.global.defaultFontColor = 'white';
+        let ctxLine,
+            ctxBar,
+            ctxPie,
+            optionsLine,
+            optionsBar,
+            optionsPie,
+            configLine,
+            configBar,
+            configPie,
+            lineChart;
+        barChart, pieChart;
+        // DOM is ready
+        $(function () {
+            drawLineChart(); // Line Chart
+            drawBarChart(); // Bar Chart
+            drawPieChart(); // Pie Chart
+
+            $(window).resize(function () {
+                updateLineChart();
+                updateBarChart();
+            });
+        })
+    </script>
+</div>
+
+<div id="add" class="tabcontent">
+ <div>
+	 <div>
+		 <div>
+			 <div>
+				 <div>
+					 <h2>Agregar Producto</h2>
+				</div>
+				 <div class="row tm-edit-product-row">
+					 <div class="col-xl-6 col-lg-6 col-md-12">
+						 <form action="" class="tm-edit-product-form">
+							 <div class="form-group mb-3">
+								 <label for="name">Nombre
+								 </label>
+								 <input id="name" name="name" type="text" class="form-control validate" required="">
+							 </div>
+							 <div class="form-group mb-3">
+								 <label for="description">Descripción</label>
+								 <textarea class="form-control validate" rows="3" required=""></textarea>
+							 </div>
+							 <div class="form-group mb-3">
+								 <label for="category">Categoría</label>
+								 <select class="custom-select tm-select-accounts" id="category">
+									 <option selected="">Seleccionar Categoría</option>
+									 <option value="1">Nuevo</option>
+									 <option value="2">Popular</option>
+									 <option value="3">Tendencia</option>
+								 </select>
+							 </div>
+							 <div class="row">
+									 <div class="form-group mb-3 col-xs-12 col-sm-6">
+											 <label for="expire_date">Expiración
+											 </label>
+											 <input id="expire_date" name="expire_date" type="text" class="form-control validate hasDatepicker" data-large-mode="true">
+										 </div>
+										 <div class="form-group mb-3 col-xs-12 col-sm-6">
+											 <label for="stock">Unidades en Inventario
+											 </label>
+											 <input id="stock" name="stock" type="text" class="form-control validate" required="">
+										 </div>
+							 </div>
+
+					 </form></div>
+					 <div class="col-xl-6 col-lg-6 col-md-12 mx-auto mb-4">
+						 <div class="tm-product-img-dummy mx-auto">
+							 <i class="fas fa-cloud-upload-alt tm-upload-icon" onclick="document.getElementById('fileInput').click();"></i>
+						 </div>
+						 <div class="custom-file mt-3 mb-3">
+							 <input id="fileInput" type="file" style="display:none;">
+							 <input type="button" class="btn btn-primary btn-block mx-auto" value="Foto del Producto" onclick="document.getElementById('fileInput').click();">
+						 </div>
+					 </div>
+					 <div class="col-12">
+						 <button type="submit" class="btn btn-primary btn-block text-uppercase">Agregar el Producto</button>
+					 </div>
+
+				 </div>
+			 </div>
+		 </div>
+	 </div>
+ </div>
+</div>
+
+<div id="Tokyo" class="tabcontent">
+ <h3>Tokyo</h3>
+ <p>Tokyo is the capital of Japan.</p>
 </div>
 
 
 
 
+
+
 	<!--====== Javascripts & Jquery ======-->
-	<script src="../js/sidebar.js"></script>
+	<script src="../js/sidenav.js"></script>
 	<script src="../js/jquery-3.2.1.min.js"></script>
 	<script src="../js/bootstrap.min.js"></script>
 	<script src="../js/owl.carousel.min.js"></script>
