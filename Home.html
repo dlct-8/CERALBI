@@ -16,53 +16,72 @@
   rel="stylesheet">
 
 	<!-- Stylesheets -->
-	<link rel="stylesheet" href="css/bootstrap.min.css"/>
-	<link rel="stylesheet" href="css/font-awesome.min.css"/>
-	<link rel="stylesheet" href="css/owl.carousel.css"/>
-	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/common.css"/>
+	<link rel="stylesheet" href="css/main.css"/>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/owl.carousel.css">
 	<link rel="stylesheet" href="css/animate.css"/>
 </head>
-<body>
-	<!-- Page Preloder -->
-	<di>
+
+<header>
+
+	<!-- Page Preloder-->
 	<div id="preloder">
 		<div class="loader"></div>
 	</div>
 
 	<!-- Header section -->
-	<header class="header-section">
-		<div class="container-fluid">
+		<!-- Top navigation -->
+		<div class="topnav" id="myTopnav">
+
+			<!-- Left-aligned links (default) -->
 			<!-- logo -->
 			<div class="site-logo">
-				<img src="Imgs/LogoAzulW.png" alt="Logo Ceralbi">
+				<img src="Imgs/LogoAzulWN.png" alt="Logo Ceralbi">
 			</div>
-			<!-- responsive -->
-			<div class="nav-switch">
+			<a href="javascript:void(0);" class="icon" onclick="hamburgerMenu()">
 				<i class="fa fa-bars"></i>
+			</a>
+			<a href="AboutUs.html">Nosotros</a>
+			<a href="Contact.html">Contacto</a>
+			<a href="Help/CustomerServices.html">Ayuda</a>
+			<a href="Home.html" class="active">Inicio</a>
+			<a href="Help/CustomerServices.html">Cajas</a>
+			<div class="dropdown">
+  			<button class="dropbtn" onclick="dropdownMenu()">Cuadros
+    			<i class="fa fa-caret-down"></i>
+			  </button>
+  			<div class="dropdown-content" id="myDropdown">
+    			<a href="#">Oficina</a>
+  			  <a href="#">Hogar</a>
+  			  <a href="#">Niños</a>
+  			</div>
+  		</div>
+
+			<!-- Right-aligned links -->
+			<div class="topnav-right">
+				<a href="Help/CustomerServices.html">Mi Cuenta <i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+				<div class="search-container">
+    			<form action="/action_page.php">
+      			<input type="text" placeholder="Buscar..." name="search">
+    			  <button type="submit"><i class="fa fa-search"></i></button>
+    			</form>
+  			</div>
+				<a href="Sales/Cart.html" class="card-bag"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span>2</span></a>
 			</div>
-			<div class="header-right">
-				<a href="Login.html" class="card-bag"><img src="Imgs/Icons/user.png" width=40px alt="Carrito"><span>X</span></a>
-				<a href="Sales/Cart.html" class="card-bag"><img src="Imgs/Icons/cart.png" width=40px alt="Carrito"><span>2</span></a>
-				<a href="#" class="search"><img src="Imgs/Icons/search.png" width=40px alt="Buscar"></a>
-			</div>
-			<!-- site menu -->
-			<ul class="main-menu">
-				<li><a href="Home.html">Inicio</a></li>
-				<li><a href="Sales/Categories/Hogar/Hogar.html">Hogar</a></li>
-				<li><a href="Sales/Categories/Oficina/Oficina.html">Oficina</a></li>
-				<li><a href="Help/Help.htmls">Ayuda</a></li>
-				<li><a href="AboutUs.html">Nosotros</a></li>
-				<li><a href="Contact.html">Contacto</a></li>
-			</ul>
+
 		</div>
-	</header>
 	<!-- Header section end -->
+</header>
+
+<body>
 
 	<!-- Hero section -->
-	<section class="hero-section set-bg" data-setbg="img/bg.jpg">
+	<section class="hero-section set-bg" data-setbg="Imgs/bg.png">
 		<div class="hero-slider owl-carousel">
 			<div class="hs-item">
-				<div class="hs-left"><img src="Imgs/Products/promo1.jpg" alt="" style="padding-right: 30px;"></div>
+				<div class="hs-left"><img src="Imgs/Products/Animales.png" alt=""></div>
 				<div class="hs-right">
 					<div class="hs-content">
 						<div class="price">desde $20.000</div>
@@ -72,7 +91,7 @@
 				</div>
 			</div>
 			<div class="hs-item">
-				<div class="hs-left"><img src="Imgs/Products/promo1.jpg" alt="" style="padding-right: 30px;"></div>
+				<div class="hs-left"><img src="Imgs/Products/Bogota.png" alt="" style="padding-right: 30px;"></div>
 				<div class="hs-right">
 					<div class="hs-content">
 						<div class="price">desde $20.000</div>
@@ -91,13 +110,13 @@
 			<div class="row">
 				<div class="col-md-6">
 					<div class="featured-item">
-						<img src="Imgs/Products/featured1.png" alt="">
+						<img src="Imgs/Products/Ciudad.png" alt="">
 						<a href="Sales/ProductoEjemplo.html" class="site-btn">Ver más</a>
 					</div>
 				</div>
 				<div class="col-md-6">
 					<div class="featured-item mb-0">
-						<img src="Imgs/Products/featured2.png" alt="">
+						<img src="Imgs/Products/Ciudad2.png" alt="">
 						<a href="Sales/ProductoEjemplo.html" class="site-btn">Ver más</a>
 					</div>
 				</div>
@@ -119,7 +138,7 @@
 				<div class="mix col-lg-3 col-md-6 best">
 					<div class="product-item">
 						<figure>
-							<img src="Imgs/Products/C1.png" alt="">
+							<img src="Imgs/Products/Comics.png" alt="">
 							<div class="pi-meta">
 								<div class="pi-m-left">
 									<img src="Imgs/Icons/binocular.png" alt="">
@@ -141,7 +160,7 @@
 				<div class="mix col-lg-3 col-md-6 new">
 					<div class="product-item">
 						<figure>
-							<img src="Imgs/Products/C1.png" alt="">
+							<img src="Imgs/Products/Comics2.png" alt="">
 							<div class="bache">NUEVO</div>
 							<div class="pi-meta">
 								<div class="pi-m-left">
@@ -164,7 +183,7 @@
 				<div class="mix col-lg-3 col-md-6 best">
 					<div class="product-item">
 						<figure>
-							<img src="Imgs/Products/C1.png" alt="">
+							<img src="Imgs/Products/Perro.png" alt="">
 							<div class="pi-meta">
 								<div class="pi-m-left">
 									<img src="Imgs/Icons/binocular.png" alt="">
@@ -186,7 +205,7 @@
 				<div class="mix col-lg-3 col-md-6 new best">
 					<div class="product-item">
 						<figure>
-							<img src="Imgs/Products/C1.png" alt="">
+							<img src="Imgs/Products/Zorro.png" alt="">
 							<div class="bache sale">OFERTA</div>
 							<div class="pi-meta">
 								<div class="pi-m-left">
@@ -209,7 +228,7 @@
 				<div class="mix col-lg-3 col-md-6 best">
 					<div class="product-item">
 						<figure>
-							<img src="Imgs/Products/post5.jpg" alt="">
+							<img src="Imgs/Products/Vespa.png" alt="">
 							<div class="pi-meta">
 								<div class="pi-m-left">
 									<img src="Imgs/Icons/binocular.png" alt="">
@@ -231,7 +250,7 @@
 				<div class="mix col-lg-3 col-md-6 new">
 					<div class="product-item">
 						<figure>
-							<img src="Imgs/Products/post6.jpg" alt="">
+							<img src="Imgs/Products/Ciudad3.png" alt="">
 							<div class="bache">NUEVO</div>
 							<div class="pi-meta">
 								<div class="pi-m-left">
@@ -254,7 +273,7 @@
 				<div class="mix col-lg-3 col-md-6 best">
 					<div class="product-item">
 						<figure>
-							<img src="Imgs/Products/post6.jpg" alt="">
+							<img src="Imgs/Products/Bicicleta.png" alt="">
 							<div class="pi-meta">
 								<div class="pi-m-left">
 									<img src="Imgs/Icons/binocular.png" alt="">
@@ -276,7 +295,7 @@
 				<div class="mix col-lg-3 col-md-6 best">
 					<div class="product-item">
 						<figure>
-							<img src="Imgs/Products/post6.jpg" alt="">
+							<img src="Imgs/Products/Carro.png" alt="">
 							<div class="pi-meta">
 								<div class="pi-m-left">
 									<img src="Imgs/Icons/binocular.png" alt="">
@@ -381,12 +400,17 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos
 
 
 	<!--====== Javascripts & Jquery ======-->
+	<script src="js/actions.js"></script>
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+
+
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/mixitup.min.js"></script>
 	<script src="js/sly.min.js"></script>
 	<script src="js/jquery.nicescroll.min.js"></script>
 	<script src="js/main.js"></script>
+
     </body>
 </html>

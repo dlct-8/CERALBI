@@ -4,83 +4,103 @@
 	<title>Ceralbi - Tienda en línea</title>
 	<meta charset="UTF-8">
 	<meta name="description" content="Ceralbi - La tienda en línea">
-	<meta name="keywords" content="ceralbi, Encajas, eCommerce, cuadros, html">
+	<meta name="keywords" content="ceralbi, Encajas, eCommerce, cuadros, cajas, html">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<!-- Icon -->
 	<link href="Imgs/LogoAzul.ico" rel="shortcut icon"/>
 
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,500,500i,600,600i,700,700i"
-  rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,600,600i,700,700i"
-  rel="stylesheet">
+	rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,600,600i,700,700i"
+	rel="stylesheet">
 
-	<!-- Stylesheets -->
-	<link rel="stylesheet" href="css/bootstrap.min.css"/>
-	<link rel="stylesheet" href="css/font-awesome.min.css"/>
-	<link rel="stylesheet" href="css/owl.carousel.css"/>
-	<link rel="stylesheet" href="css/style.css"/>
-	<link rel="stylesheet" href="css/animate.css"/>
+	<!-- Stylesheets-->
+	<link rel="stylesheet" href="css/common.css"/>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
-<body>
-	<!-- Page Preloder -->
+<header>
+
+	<!-- Page Preloder
 	<div id="preloder">
 		<div class="loader"></div>
-	</div>
+	</div>-->
 
 	<!-- Header section -->
-	<header class="header-section">
-		<div class="container-fluid">
+		<!-- Top navigation -->
+		<div class="topnav" id="myTopnav">
+
+			<!-- Centered link
+			<div class="topnav-centered">
+				<a href="Home.html" class="active">Tienda</a>
+			</div> -->
+
+			<!-- Left-aligned links (default) -->
 			<!-- logo -->
 			<div class="site-logo">
-				<img src="Imgs/LogoAzulW.png" alt="Logo Ceralbi">
+				<img src="Imgs/LogoAzulWN.png" alt="Logo Ceralbi">
 			</div>
-			<!-- responsive -->
-			<div class="nav-switch">
+			<a href="javascript:void(0);" class="icon" onclick="hamburgerMenu()">
 				<i class="fa fa-bars"></i>
+			</a>
+			<a href="AboutUs.html" class="active">Nosotros</a>
+			<a href="Contact.html">Contacto</a>
+			<a href="Help/CustomerServices.html">Ayuda</a>
+			<a href="Home.html">Inicio</a>
+			<a href="Help/CustomerServices.html">Cajas</a>
+			<div class="dropdown">
+  			<button class="dropbtn" onclick="dropdownMenu()">Cuadros
+    			<i class="fa fa-caret-down"></i>
+			  </button>
+  			<div class="dropdown-content" id="myDropdown">
+    			<a href="#">Oficina</a>
+  			  <a href="#">Hogar</a>
+  			  <a href="#">Niños</a>
+  			</div>
+  		</div>
+
+			<!-- Right-aligned links -->
+			<div class="topnav-right">
+				<a href="Help/CustomerServices.html">Mi Cuenta <i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+				<div class="search-container">
+    			<form action="/action_page.php">
+      			<input type="text" placeholder="Search.." name="search">
+    			  <button type="submit"><i class="fa fa-search"></i></button>
+    			</form>
+  			</div>
+				<a href="Sales/Cart.html" class="card-bag"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span>2</span></a>
 			</div>
-			<div class="header-right">
-				<a href="Sales/Cart.html" class="card-bag"><img src="img/icons/bag.png" alt=""><span>2</span></a>
-				<a href="#" class="search"><img src="img/icons/search.png" alt=""></a>
-			</div>
-			<!-- site menu -->
-			<ul class="main-menu">
-				<li><a href="Home.html">Inicio</a></li>
-				<li><a href="#">Hogar</a></li>
-				<li><a href="#">Oficina</a></li>
-				<li><a href="#">Ayuda</a></li>
-				<li><a href="AboutUs.html">Nosotros</a></li>
-				<li><a href="Contact.html">Contacto</a></li>
-			</ul>
+
 		</div>
-	</header>
 	<!-- Header section end -->
+</header>
 
-
+<body>
 	<!-- About Us -->
-	<div class="card-warp">
-	  <div class="container" style="text-align:center">
-		   <h1>Nosotros</h1>
-		       <p>El sistema de información Ceralbi es una herramienta esencial en la empresa (Encajas)
-						 que se va a encargar de la administración de productos y ventas por parte de los dueños de
-						 la empresa y además va a proveer una tienda en línea para la comercialización de los productos.
-						 Este Sistema funcional en un servidor web, está compuesto por tres módulos
-						  (Ventas, Clientes y Análisis financiero) pensados en cada usuario que interactúa con la empresa.
-							Cabe destacar que no se abordará la parte contable que maneja la empresa.
-	          </p>
-       <div class="imgcontainer">
-				 <img src="Imgs/AboutUS/Diana.png" alt="Diana" class="avatar">
- 				<img src="Imgs/AboutUS/Zayra.png" alt="Zayra" class="avatar">
-       </div>
-				     <div>
-	            <a class="site-btn btn-full" href="Home.html">Inicio</a>
-	            <br>
-	          </div>
-	  </div>
+	<div class="aboutUs">
+		<h1>¿Quiénes somos?</h1><br>
+					<p class="dark"> El sistema de información Ceralbi es una herramienta esencial en la empresa (Encajas)
+						que se va a encargar de la administración de productos y ventas por parte de los dueños de
+						la empresa y además va a proveer una tienda en línea para la comercialización de los productos.
+						Este Sistema funcional en un servidor web, está compuesto por tres módulos
+						(Ventas, Clientes y Análisis financiero) pensados en cada usuario que interactúa con la empresa.
+						Cabe destacar que no se abordará la parte contable que maneja la empresa.
+					</p>
+					<div class="imgcontainer">
+						<img src="Imgs/AboutUS/Diana.png" alt="Diana" class="avatar">
+						<img src="Imgs/AboutUS/Zayra.png" alt="Zayra" class="avatar">
+					</div>
+					<div>
+						<a class="site-btn btn-full" href="Home.html">Inicio</a>
+						<br>
+					</div>
 	</div>
-	<!-- About Us end -->
 
-
+		<!-- About Us end -->
+</body>
 
 	<!-- Footer section -->
 	<section class="footer-top-section home-footer">
@@ -89,7 +109,7 @@
 				<div class="col-lg-3 col-md-8 col-sm-12">
 					<div class="footer-widget about-widget">
 						<img src="Imgs/LogoAzulW.png" class="footer-logo" alt="">
-						<p>Acá va el texto con una descripción de la empresa.</p>
+						<p class="light">Acá va el texto con una descripción de la empresa.</p>
 						<div class="cards">
 							<img src="img/cards/5.png" alt="">
 							<img src="img/cards/4.png" alt="">
@@ -148,24 +168,22 @@
 	</section>
 	<!-- Footer section end -->
 
-		<!-- Copyright -->
+	<!-- Copyright -->
 	<footer class="footer-section">
 		<div class="container">
 			<p class="copyright">
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos los derechos reservados | Diseño por <a href="#" target="_blank">Ceralbi</a>
-</p>
+				Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos los derechos reservados | Diseñado por
+				<img src="Imgs/LogoCR.png" alt="Logo Ceralbi" class="copyright">
+			</p>
 		</div>
 	</footer>
 	<!-- End -->
 
 
-	<!--====== Javascripts & Jquery ======-->
+	<!--====== Javascripts & Jquery	======-->
+	<script src="js/actions.js"></script>
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/mixitup.min.js"></script>
-	<script src="js/sly.min.js"></script>
-	<script src="js/jquery.nicescroll.min.js"></script>
-	<script src="js/main.js"></script>
-    </body>
+
+</body>
 </html>
