@@ -221,7 +221,7 @@ thead {
   box-shadow: 0 0 0 0.1rem rgb(180, 206, 233, 0.5);
 }
 .form-group label {
-  color: #fff;
+  color: #001B2E;
   margin-bottom: 10px;
 }
 .tm-hide-sm {
@@ -398,7 +398,7 @@ input[type="checkbox"]:focus {
 .custom-select {
   width: 100%;
   border: none;
-  color: #acc6de;
+  color: #EFEFEF;
   height: 50px;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -411,7 +411,7 @@ input[type="checkbox"]:focus {
   -o-border-radius: 0;
   border-radius: 0;
   padding: 15px;
-  background: url(../img/arrow-down.png) 98% no-repeat #50657b;
+  background-color: #001B2E;
 }
 .custom-select:focus {
   outline: 0;

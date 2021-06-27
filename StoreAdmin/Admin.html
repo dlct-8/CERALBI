@@ -36,7 +36,8 @@
 	<img src="../Imgs/LogoAzulW.png" alt="Logo Ceralbi">
 	<div class="admin">
 		Administrador
-		<br><a href="#">Salir de la Cuenta</a>
+		<br><a href="#" style="font-size:13px;color:#EFEFEF;text-decoration:none;">
+			Salir de la Cuenta</a>
 	</div>
  	<button class="tablinks active" onclick="openTab(event, 'dashboard')"><i class="fas fa-tachometer-alt"></i>
 		Dashboard</button>
@@ -44,6 +45,8 @@
 		Agregar Productos</button>
  	<button class="tablinks" onclick="openTab(event, 'edit')"><i class="fas fa-edit"></i>
 		Editar Productos</button>
+		<button class="tablinks" onclick="openTab(event, 'bill')"><i class="fas fa-address-book"></i>
+			Gestión de Clientes</button>
 	<button class="tablinks" onclick="openTab(event, 'bill')"><i class="fas fa-file-invoice-dollar"></i>
 		Facturas</button>
 	<button class="tablinks" onclick="openTab(event, 'inventory')"><i class="fas fa-boxes"></i>
@@ -368,7 +371,7 @@
 
 	<div id="add" class="tabcontent">
 		<div>
-			<h2>Agregar Producto</h2>
+			<br><h2>Agregar Producto</h2>
 		</div>
 		<div class="row tm-edit-product-row">
 			<div class="col-xl-6 col-lg-6 col-md-12">
@@ -385,6 +388,7 @@
 					<div class="form-group mb-3">
 						<label for="category">Categoría</label>
 						<select class="custom-select tm-select-accounts" id="category">
+							<a href=""><i class="fas fa-angle-down"></i></a>
 							<option selected="">Seleccionar Categoría</option>
 							<option value="1">Nuevo</option>
 							<option value="2">Popular</option>
@@ -392,11 +396,11 @@
 						</select>
 					</div>
 					<div class="row">
-						<div class="form-group mb-3 col-xs-12 col-sm-6">
+					<!--	<div class="form-group mb-3 col-xs-12 col-sm-6">
 							<label for="expire_date">Expiración
 							</label>
 							<input id="expire_date" name="expire_date" type="text" class="form-control validate hasDatepicker" data-large-mode="true">
-						</div>
+						</div>-->
 						<div class="form-group mb-3 col-xs-12 col-sm-6">
 							<label for="stock">Unidades en Inventario
 							</label>
@@ -412,11 +416,11 @@
 				</div>
 				<div class="custom-file mt-3 mb-3">
 					<input id="fileInput" type="file" style="display:none;">
-					<input type="button" class="btn btn-primary btn-block mx-auto" value="Foto del Producto" onclick="document.getElementById('fileInput').click();">
+					<input type="button" class="site-btn btn-block mx-auto" value="Foto del Producto" onclick="document.getElementById('fileInput').click();">
 				</div>
 			</div>
 			<div class="col-12">
-				<button type="submit" class="btn btn-primary btn-block text-uppercase">Agregar el Producto</button>
+				<button type="submit" class="site-btn btn-block text-uppercase">Agregar el Producto</button>
 			</div>
 
 		</div>
