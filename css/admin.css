@@ -3,51 +3,14 @@
 Administrador
 
 */
+/*
 
-html {
-  font-size: 16px;
-  overflow-x: hidden;
-}
-body {
-  font-family: Roboto, Helvetica, Arial, sans-serif;
-  background-color: #05477A;
-  overflow-x: hidden;
-}
-a {
-  transition: all 0.3s ease;
-}
-a:focus,
-a:hover {
-  text-decoration: none;
-}
-button:focus {
-  outline: 0;
-}
-.navbar-brand {
-  display: flex;
-  align-items: center;
-}
-.tm-site-icon {
-  color: #656565;
-}
-.tm-site-title {
-  display: inline-block;
-  text-transform: uppercase;
-  font-size: 1.3rem;
-  font-weight: 700;
-  color: #fff;
-}
-.navbar {
-  height: 100px;
-  background-color: #05477A;
-  padding: 0;
-}
-.navbar .container {
-  position: relative;
-}
-.tm-logout-icon {
-  font-size: 1.5em;
-}
+Product Admin CSS Template
+
+https://templatemo.com/tm-524-product-admin
+
+*/
+
 .tm-mt-big {
   margin-top: 57px;
 }
@@ -67,7 +30,7 @@ button:focus {
   box-shadow: 1px 1px 5px 0 #05477A;
   min-height: 350px;
   height: 100%;
-  max-height: 450px;
+  max-height: 350px;
 }
 .tm-block-avatar,
 .tm-block-settings {
@@ -123,35 +86,6 @@ button:focus {
 .dropdown-item {
   color: #fff;
   padding: 15px 30px;
-}
-.navbar-nav .active > .nav-link,
-.navbar-nav .nav-link.active {
-  background-color: #f5a623;
-  color: #fff;
-}
-.navbar-nav .nav-link.active i {
-  color: #fff;
-}
-.dropdown-item:focus,
-.dropdown-item:hover {
-  background-color: #05477A;
-}
-.navbar-nav a:hover,
-.navbar-nav a:hover i {
-  color: #f5a623;
-}
-.nav-item {
-  text-align: center;
-}
-.nav-item:last-child {
-  margin-right: 0;
-}
-.dropdown-toggle::after {
-  display: none;
-}
-.dropdown-menu {
-  margin-top: 0;
-  border: 0;
 }
 .tm-content-row {
   justify-content: space-between;
@@ -252,7 +186,7 @@ thead {
   z-index: 1000;
   padding: 14px;
   border-radius: 50%;
-  background-color: rgba(57, 78, 100, 0.7);
+  background-color: #EFEFEF;
   display: inline-block;
   width: 50px;
   height: 50px;
@@ -483,19 +417,11 @@ input[type="checkbox"]:focus {
   outline: 0;
 }
 .tm-trash-icon {
-  color: #6e6c6c;
+  color: #EFEFEF;
   cursor: pointer;
 }
 .tm-trash-icon:hover {
   color: #9f1321;
-}
-.tm-footer {
-  background-color: #567086;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  -webkit-box-shadow: 0 -3px 5px 0 rgba(69, 92, 113, 0.59);
-  -moz-box-shadow: 0 -3px 5px 0 rgba(69, 92, 113, 0.59);
-  box-shadow: 0 -3px 5px 0 rgba(69, 92, 113, 0.59);
 }
 .custom-select {
   height: 50px;
@@ -533,23 +459,6 @@ input[type="checkbox"]:focus {
 .tm-login-col {
   max-width: 470px;
 }
-.navbar-toggler {
-  border-color: #708da8;
-  box-shadow: rgba(255, 255, 255, 0.1) 0 1px 1px 2px;
-  border-radius: 0;
-  padding: 10px 15px;
-  transition: all 0.2s ease;
-}
-.navbar-toggler:hover {
-  border-color: #f5a623;
-  color: #f5a623;
-}
-.tm-nav-icon {
-  color: #fff;
-}
-.navbar-toggler:hover .tm-nav-icon {
-  color: #f5a623;
-}
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
@@ -573,73 +482,13 @@ input[type="checkbox"]:focus {
   color: #aacbea;
 }
 
-@media (min-width: 1200px) {
-  .navbar-expand-xl .navbar-nav .nav-link {
-    padding-left: 28px;
-    padding-right: 28px;
-  }
-  .navbar-collapse {
-    height: 100%;
-  }
-}
-@media (min-width: 992px) {
-  .navbar-expand-lg .navbar-nav .nav-link {
-    padding: 15px 20px;
-  }
-}
-@media (max-width: 1275px) and (min-width: 1200px) {
-  .nav-item {
-    margin-right: 15px;
-  }
-}
-@media (max-width: 1350px) {
-  .nav-item {
-    margin-right: 1px;
-  }
-}
 @media (max-width: 1199px) {
   .tm-col-big,
   .tm-col-small {
     width: 49.65%;
   }
-  .navbar-collapse {
-    padding: 0;
-    box-shadow: rgba(255, 255, 255, 0.1) 0 1px 1px 1px;
-    position: absolute;
-    top: 72px;
-    right: 20px;
-    width: 200px;
-    z-index: 1000;
-  }
-  .dropdown-menu {
-    text-align: center;
-  }
-  .nav-link {
-    color: #fff;
-    background-color: #567086;
-    padding: 15px;
-    flex-direction: row;
-  }
-  .nav-link > i {
-    font-size: 1rem;
-    margin-right: 10px;
-    margin-bottom: 0;
-  }
-  .nav-item {
-    margin-right: 0;
-  }
   .tm-block-taller {
     max-height: 520px;
-  }
-}
-@media (max-width: 1199.98px) {
-  .navbar-expand-xl > .container,
-  .navbar-expand-xl > .container-fluid {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-  .navbar-collapse {
-    right: 15px;
   }
 }
 @media (max-width: 991px) {
@@ -679,12 +528,6 @@ input[type="checkbox"]:focus {
   }
 }
 @media (max-width: 574px) {
-  .navbar-collapse {
-    top: 47px;
-  }
-  .navbar {
-    height: 50px;
-  }
   .tm-site-title {
     font-size: 1.4rem;
     margin-left: 7px;

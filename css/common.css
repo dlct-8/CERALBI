@@ -48,6 +48,10 @@ p.dark {
 	color: #001B2E;
 	line-height: 2;
 }
+p.icon {
+	font-size: 27px!important;
+	color: #EFEFEF;
+}
 
 img {
 	max-width: 100%;

@@ -25,31 +25,36 @@ h6 {
 	align-items: center;
 	justify-content: center;
 	background-color: #EFEFEF;
-  margin-top: 5%;/*cuerpo*/
 }
 
 form{
 	padding-top: 2px;
 	font-size: 14px;
-	margin-top: 30px;
 }
 
-.card-title{ font-weight:300; }
+.form-group {
+	width: 100%;
+}
+
+.card-title {
+	font-weight:300;
+}
 
 .btn{
 	font-size: 14px;
 	margin-top:20px;
 }
 
-
 .login-form{
-	width:330px;
+	width:30%;
 	margin:20px;
+	min-width:300px;
+
 }
 
 .sign-up{
 	text-align:center;
-	padding:20px 0 0;
+	padding:0;
 }
 
 .alert{
@@ -63,38 +68,9 @@ form{
 p.centrado {
   text-align: center;
 }
-/* buttons */
 
-.site-btn {
-	display: inline-block;
-	text-align: center;
-	font-size: 14px;
-	color: #fff;
-	padding: 12px 30px;
-	min-width: 138px;
-	font-weight: 500;
-	border: none;
-	background: #001B2E;
-	cursor: pointer;
-	line-height: normal;
-	-webkit-transition: all 0.3s ease 0s;
-	-o-transition: all 0.3s ease 0s;
-	transition: all 0.3s ease 0s;
-}
-
-.site-btn:hover {
-	color: #fff;
-}
-
-.site-btn.btn-line {
-	background: transparent;
-	border: 2px solid #001B2E;
-	color: #001B2E;
-	padding: 12px 20px;
-}
-
-.site-btn.btn-line:hover {
-	background: #05477A;
-	border: 2px solid #05477A;
-	color: #fff;
+.logo-is {
+	width: 100%;
+	min-width: 250px;
+	padding: 20px;
 }

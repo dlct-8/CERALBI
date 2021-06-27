@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="es">
 <head>
-	<title>Ceralbi - Tienda en línea</title>
+	<title>Mi Cuenta</title>
 	<meta charset="UTF-8">
 	<meta name="description" content="Ceralbi - La tienda en línea">
 	<meta name="keywords" content="ceralbi, Encajas, eCommerce, cuadros, html">
@@ -14,148 +14,179 @@
   rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,600,600i,700,700i"
   rel="stylesheet">
-
+  <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
 	<!-- Stylesheets -->
 	<link rel="stylesheet" href="../css/bootstrap.min.css"/>
-	<link rel="stylesheet" href="../css/font-awesome.min.css"/>
-	<link rel="stylesheet" href="../css/owl.carousel.css"/>
-	<link rel="stylesheet" href="../css/style.css"/>
+	<script src="https://kit.fontawesome.com/cfe8b23fc4.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="../css/common.css"/>
+	<link rel="stylesheet" href="../css/main.css"/>
+	<link rel="stylesheet" href="../css/login.css"/>
+	<link rel="stylesheet" href="../css/sidenav.css"/>
 	<link rel="stylesheet" href="../css/animate.css"/>
 </head>
-<body>
+
+<header>
 	<!-- Page Preloder -->
 	<div id="preloder">
 		<div class="loader"></div>
 	</div>
 
 	<!-- Header section -->
-	<header class="header-section">
-		<div class="container-fluid">
+		<!-- Top navigation -->
+		<div class="topnav" id="myTopnav">
+
+			<!-- Left-aligned links (default) -->
 			<!-- logo -->
 			<div class="site-logo">
-				<img src="../Imgs/LogoAzulW.png" alt="Logo Ceralbi">
+				<img src="../Imgs/LogoAzulWN.png" alt="Logo Ceralbi">
 			</div>
-			<!-- responsive -->
-			<div class="nav-switch">
+			<a href="javascript:void(0);" class="icon" onclick="hamburgerMenu()">
 				<i class="fa fa-bars"></i>
+			</a>
+			<a href="../AboutUs.html">Nosotros</a>
+			<a href="../Contact.html">Contacto</a>
+			<a href="../Help/CustomerServices.html">Ayuda</a>
+			<a href="../Home.html">Inicio</a>
+			<a href="../Sales/Cajas/Cajas.html">Cajas</a>
+			<div class="dropdown">
+				<button class="dropbtn" onclick="dropdownMenu()">Cuadros
+					<i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content" id="myDropdown">
+					<a href="../Sales/Cuadros/Oficina/Oficina.html">Oficina</a>
+					<a href="../Sales/Cuadros/Hogar/Hogar.html">Hogar</a>
+				</div>
 			</div>
-			<div class="header-right">
-				<a href="../Sales/Cart.html" class="card-bag"><img src="../Imgs/Icons/cart.png" width=40px alt="Carrito"><span>2</span></a>
-				<a href="#" class="search"><img src="../Imgs/Icons/search.png" width=40px alt="Buscar"></a>
+
+			<!-- Right-aligned links -->
+			<div class="topnav-right">
+				<a href="../Help/CustomerServices.html"class="active">Mi Cuenta <i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+				<div class="search-container">
+					<form action="/action_page.php">
+						<input type="text" placeholder="Buscar..." name="search">
+						<button type="submit"><i class="fa fa-search"></i></button>
+					</form>
+				</div>
+				<a href="../Sales/Cart.html" class="card-bag"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span>2</span></a>
 			</div>
-			<!-- site menu -->
-			<ul class="main-menu">
-				<li><a href="../Home.html">Inicio</a></li>
-				<li><a href="../Sales/Categories/Hogar/Hogar.html">Hogar</a></li>
-				<li><a href="../Sales/Categories/Oficina/Oficina.html">Oficina</a></li>
-				<li><a href="../Help/Help.html">Ayuda</a></li>
-				<li><a href="../AboutUs.html">Nosotros</a></li>
-				<li><a href="../Contact.html">Contacto</a></li>
-			</ul>
+
 		</div>
-	</header>
+</header>
 	<!-- Header section end -->
 
-
-	<!-- Page Info -->
-	<div class="page-info-section page-info">
-		</div>
-	<!-- Page Info end -->
-
+<body>
 
 	<!-- Page -->
-	<div class="page-area contact-page">
-		<div class="container spad">
-			<div class="text-center">
-				<h4 class="contact-title">Administración de la cuenta</h4>
-			</div>
-
+	<div id="mySidenav" class="sidenav">
+		<div class="tab">
+			<button class="openbtn" onclick="openNav()"><i class="fas fa-bars" style="padding-left:5px;
+			padding-right:10px;"></i>
+			Mi Cuenta</button>
+			<button class="tablinks" onclick="openTab(event, 'orders'); closeNav()"><i class="fas fa-shopping-bag"
+			style="padding-left:5px; padding-right:10px;"></i>
+				Mis Compras</button>
+			<button class="tablinks" onclick="openTab(event, 'myData'); closeNav()"><i class="fas fa-user"
+				style="padding-left:5px; padding-right:10px;"></i>
+				Mis Datos</button>
+			<button class="tablinks" onclick="openTab(event, 'edit'); <closeNav></closeNav>"><i class="fas fa-cogs"
+				style="padding-left:5px; padding-right:10px;"></i>
+				Ajustes</button>
+			<button class="closebtn" onclick="closeNav()"><i class="fas fa-window-close" style="padding-left:5px;
+			padding-right:10px;"></i>
+				Cerrar Panel</button>
 		</div>
+	</div>
+
+	<div id="main">
+		<div id="orders" class="tabcontent">
+	 		<h3>Mis Compras</h3>
+					<img src="../Imgs/Products/Animales.png" alt="Cuadro" width=10%>
+		</div>
+		<div id="myData" class="tabcontent">
+	 <h3>Datos de mi Cuenta</h3>
+	 Usuario
+	 E-mail
+	 <h3>Datos Personales</h3>
+	 Nombre y apellido
+	 Documento
+	 Teléfono
+	 <h3>Métodos de Pago</h3>
+	 Imagen de visa - last 4, vencimiento, eliminar
+	 <h3>Direcciones</h3>
+	 4 líneas de dirección -  ELiminar
+	 Agregar direccion
+	 <h3>Privacidad y cofidencialidad de la información</h3>
+	</div>
+	</div>
+	<!-- Page End-->
 
 	<!-- Footer section -->
-	<section class="footer-top-section home-footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-3 col-md-8 col-sm-12">
-					<div class="footer-widget about-widget">
-						<img src="Imgs/LogoAzulW.png" class="footer-logo" alt="">
-						<p>Acá va el texto con una descripción de la empresa.</p>
-						<div class="cards">
-							<img src="img/cards/5.png" alt="">
-							<img src="img/cards/4.png" alt="">
-							<img src="img/cards/3.png" alt="">
-							<img src="img/cards/2.png" alt="">
-							<img src="img/cards/1.png" alt="">
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-2 col-md-4 col-sm-6">
-					<div class="footer-widget">
-						<h6 class="fw-title">Sitios</h6>
-						<ul>
-							<li><a href="Home.html">Inicio</a></li>
-							<li><a href="AboutUs.html">Nosotros</a></li>
-							<li><a href="#">Soporte</a></li>
-							<li><a href="#">Términos y Condiciones</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-lg-2 col-md-4 col-sm-6">
-					<div class="footer-widget">
-						<h6 class="fw-title">Sitio</h6>
-						<ul>
-							<li><a href="#">Page</a></li>
-							<li><a href="#">Page</a></li>
-							<li><a href="#">Page</a></li>
-							<li><a href="#">Page</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-lg-2 col-md-4 col-sm-6">
-					<div class="footer-widget">
-						<h6 class="fw-title">Envíos y Devoluciones</h6>
-						<ul>
-							<li><a href="#">Rastrear Órdenes</a></li>
-							<li><a href="#">Devoluciones</a></li>
-							<li><a href="#">Métodos de envío</a></li>
-							<li><a href="#">Ayuda</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-lg-2 col-md-4 col-sm-6">
-					<div class="footer-widget">
-						<h6 class="fw-title">Contacto</h6>
-						<div class="text-box">
-							<p>Ceralbi Ltda </p>
-							<p>Una dirección</p>
-							<p>+57 312 000 0000</p>
-							<p>ceralbi@ceralbi.com</p>
-						</div>
-					</div>
-				</div>
+	<div class="footer-top">
+		<div class="row">
+			<div class="col-md-4 pr-md-5">
+				<img src="../Imgs/LogoAzulW.png" class="footer-logo" alt="Logo Ceralbi">
+				<p class="light">Destacados como desarrolladores de software a la medida
+					de aplicaciones web y móviles para todas las industrias.</p>
+			</div>
+			<div class="col-md">
+				<ul class="list-unstyled nav-links">
+					<li><a href="../Home.html">Inicio</a></li>
+					<li><a href="../AboutUs.html">Nosotros</a></li>
+					<li><a href="../Help/Help.html">Ayuda</a></li>
+					<li><a href="../Contact.html">Contacto</a></li>
+				</ul>
+			</div>
+			<div class="col-md">
+				<ul class="list-unstyled nav-links">
+					<li><a href="../Customers/Login.html">Mi Cuenta</a></li>
+					<li><a href="../StoreAdmin/Admin.html">Administrador</a></li>
+					<li><a href="../NavMap.html">Mapa de Navegación</a></li>
+					<li><a href="../ErrorPages/Error404.html">Error 404</a></li>
+					<li><a href="../ErrorPages/Error500.html">Error 500</a></li>
+				</ul>
+			</div>
+			<div class="col-md">
+				<ul class="list-unstyled nav-links">
+					<li><a href="#">Política de Privacidad</a></li>
+					<li><a href="#">Términos &amp; Condiciones</a></li>
+					<li><a href="#">Socios</a></li>
+				</ul>
+			</div>
+			<div class="col-md text-md-center">
+				<ul class="social">
+					<li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+					<li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+					<li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+					<li><a href="#"><i class="fab fa-pinterest-square"></i></a></li>
+				</ul>
+				<br><br><p class=""><a href="../Contact.html" class="btn btn-footer">Contact Us</a></p>
 			</div>
 		</div>
-	</section>
+	</div>
+
 	<!-- Footer section end -->
 
-		<!-- Copyright -->
+	<!-- Copyright -->
 	<footer class="footer-section">
 		<div class="container">
 			<p class="copyright">
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos los derechos reservados | Diseño por <a href="#" target="_blank">Ceralbi</a>
-</p>
+				Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos los derechos reservados | Diseñado por
+				<img src="../Imgs/LogoCR.png" alt="Logo Ceralbi" class="copyright">
+			</p>
 		</div>
 	</footer>
 	<!-- End -->
 
 
-	<!--====== Javascripts & Jquery ======-->
-	<script src="../js/jquery-3.2.1.min.js"></script>
-	<script src="../js/bootstrap.min.js"></script>
-	<script src="../js/owl.carousel.min.js"></script>
-	<script src="../js/mixitup.min.js"></script>
-	<script src="../js/sly.min.js"></script>
-	<script src="../js/jquery.nicescroll.min.js"></script>
-	<script src="../js/main.js"></script>
-    </body>
+
+			<!--====== Javascripts & Jquery ======-->
+			<script src="../js/jquery-3.2.1.min.js"></script>
+			<script src="../js/sidenav.js"></script>
+			<script src="../js/bootstrap.min.js"></script>
+			<script src="../js/mixitup.min.js"></script>
+			<script src="../js/sly.min.js"></script>
+			<script src="../js/jquery.nicescroll.min.js"></script>
+			<script src="../js/main.js"></script>
+			<script src="../js/login.js"></script>
+</body>
 </html>

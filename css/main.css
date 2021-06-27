@@ -183,11 +183,12 @@
 }
 
 .hs-item .hs-left {
-	padding-top: 170px;
 	width: calc(50% + 135px);
-	padding-left: 70px;
+	margin-left: 150px;
+	padding-right: 70px;
 	float: left;
 	opacity: 0;
+	max-width: 470px;
 }
 
 .hs-item .hs-right {
@@ -225,7 +226,7 @@
 }
 
 .hs-item .hs-content .site-btn {
-	top: 70px;
+	top: 55px;
 	position: relative;
 	opacity: 0;
 	-webkit-transition: all 0s;
@@ -465,7 +466,7 @@
 }
 
 .product-item figure img {
-	min-width: 100%; //Cuadricula
+	width: 100%; //Cuadrícula
 }
 
 .product-item figure:after {
@@ -591,83 +592,6 @@
    width: 15%;
    border-radius: 50%;
  }
-
-/*------------------
-  Footer Section
----------------------*/
-
-.footer-top-section {
-	padding-top: 50px;
-	padding-bottom: 50px;
-	background: #05477A;
-}
-
-.footer-top-section.home-footer {
-	padding-bottom: 0;
-}
-
-.footer-widget .fw-title {
-	text-transform: uppercase;
-	font-weight: 600;
-	color: #EFEFEF;
-	margin-bottom: 50px;
-	letter-spacing: -0.2px;
-}
-
-.footer-widget ul {
-	list-style: none;
-}
-
-.footer-widget ul li {
-	font-size: 14px;
-	display: block;
-	margin-bottom: 10px;
-	color: #EFEFEF;
-	opacity: 0.55;
-}
-
-.footer-widget ul li:last-child {
-	margin-bottom: 0;
-}
-
-.footer-widget ul li a {
-	color: #EFEFEF;
-}
-
-.footer-widget .text-box p {
-	margin-bottom: 18px;
-}
-
-.footer-widget .text-box p:last-child {
-	margin-bottom: 0;
-}
-
-.about-widget .footer-logo {
-	margin-bottom: 50px;
-}
-
-.about-widget p {
-	margin-bottom: 40px;
-}
-
-.about-widget .cards img {
-	margin-right: 1px;
-}
-
-/*------------------
-  Copyright Section
----------------------*/
-
-.footer-section {
-	background: #001B2E;
-	padding: 12px;
-}
-
-.footer-section .copyright {
-	color: #EFEFEF;
-	margin-bottom: 0;
-	line-height: normal;
-}
 
 /*------------------
 	Breadcrumbs
@@ -1833,4 +1757,6 @@ ul.breadcrumb li a:hover {
 		padding: 30px 30px 10px;
 	}
 
-}
+	/*---------------------
+	  Customer Account
+	-----------------------*/
