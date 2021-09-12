@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Factura</title>
+
+  </head>
+  <body>
+     <div>
+         <h2>Factura</h2>
+         <div>
+           <div>
+             <h1>Ceralbi</h1>
+             <p>Desarrollo de software</p>
+             <p>Nit: 890000000-1</p>
+             <p>Bogotá D.C</p>
+           </div>
+           <div>
+             <img src="Imgs\LogoAzulW.png" />
+           </div>
+         </div>
+
+         <hr />
+
+         <div>
+           <div>
+             <div class="col-md-6">
+               N° Factura*:
+               <input type="text" placeholder="">
+             </div>
+             <div class="col-md-6">
+               Fecha*:
+               <input type="text" placeholder="">
+             </div>
+             <div class="col-md-6">
+               Fecha de vencimiento*:
+               <input type="text" placeholder="">
+             </div>
+             <div class="col-md-6">
+               N° de pedido*:
+               <input type="text" placeholder="">
+             </div>
+             <div class="row">Datos cliente
+               <div class="col-md-6">
+                 Cliente*:
+                 <input type="text" placeholder="">
+               </div>
+               <div class="col-md-6">
+                 Nit/CC*:
+                 <input type="text" placeholder="">
+               </div>
+               <div class="col-md-12">
+                 Teléfono*:
+                 <input type="text" placeholder="">
+                 <div class="col-md-12">
+                  Dirección*:
+                 <input type="text" placeholder="">
+                 </div>
+                 <div class="col-md-12">
+                   Código Postal *:
+                 <input type="text" placeholder="">
+                 </div>
+                 <select>
+                   <option>Ciudad/Municipio *</option>
+                 </select>
+                 </div>
+                  <div class="col-md-12">
+                  Correo Electrónico *
+                 <input type="email" placeholder="">
+                 </div>
+                  <div class="col-md-12">
+                  Formas de pago *
+                 <input type="text" placeholder="">
+                 </div>
+                 <div class="checkbox-items">
+                   <div class="ci-item">
+                     <input type="checkbox" name="a" id="tandc">
+                     <label for="tandc">Términos y Condiciones</label>
+                   </div>
+
+         <div>
+           <table>
+             <thead>
+               <tr>
+                 <th>Codigo Artículo</th>
+                 <th>Iva</th>
+                 <th>Cantidad</th>
+                 <th>Total</th>
+               </tr>
+             </thead>
+             <tbody>
+               <tr>
+                 <td>123</td>
+                 <td>19</td>
+                 <td>3</td>
+                 <td>60000</td>
+               </tr>
+               <tr>
+                 <td>132</td>
+                 <td>19</td>
+                 <td>1</td>
+                 <td>20000</td>
+               </tr>
+             </tbody>
+             <tfoot>
+               <tr>
+                 <th></th>
+                 <th></th>
+                 <th>subtotal Factura</th>
+                 <th>64.800</th><br>
+               </tr>
+               <tr>
+                 <th></th>
+                 <th></th>
+                 <th>Iva</th>
+                 <th>15.200</th>
+               </tr>
+               <tr>
+                 <th></th>
+                 <th></th>
+                 <th>Total Factura</th>
+                 <th>80.000</th>
+               </tr>
+             </tfoot>
+           </table>
+         </div>
+
+     </div>
+     <hr><hr>
+     <h1>Inventario</h1>
+     <div>
+       <table>
+         <thead>
+           <tr>
+             <th>Fecha</th>
+             <th>N° Producto</th>
+              <th>Nombre del Producto</th>
+              <th>Precio Unitario</th>
+             <th>Cantidad</th>
+             <th>En Stock/Agotado</th>
+
+           </tr>
+         </thead>
+         <tbody>
+           <tr>
+            <td>10/06/2021</td>
+             <td>123</td>
+             <th>Cuadro Margarita</th>
+             <td>20.000</td>
+             <td>12</td>
+             <td>En stock</td>
+           </tr>
+           <tr>
+             <td>19/06/2021</td>
+             <td>5556</td>
+             <th>Cuadro Balón</th>
+             <td>20.000</td>
+              <td>0</td>
+             <td>Agotado</td>
+           </tr>
+         </tbody>
+         <tfoot>
+           <tr>
+             <th></th>
+             <th></th>
+             <th>Artículos Agotados Agotado</th>
+             <th>1</th><br>
+           </tr>
+           <tr>
+             <th></th>
+             <th></th>
+             <th>Artículos en Stock</th>
+             <th>1000</th>
+           </tr>
+         </tfoot>
+       </table>
+
+     </div>
+  </body>
+</html>
