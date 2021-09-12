@@ -58,6 +58,7 @@
 
 .tab .contents {
  margin-left: 250px;
+ position: fixed;
 }
 
 /*----------------
@@ -66,7 +67,7 @@
 
   /* The side navigation menu */
 .sidenav {
- height: 38%; /* 100% Full-height */
+ height: 40%; /* 100% Full-height */
  width: 45px; /* 0 width - change this with JavaScript */
  position: fixed; /* Stay in place */
  z-index: 1; /* Stay on top */
@@ -112,4 +113,32 @@
 @media screen and (max-height: 450px) {
  .sidenav {padding-top: 15px;}
  .sidenav a {font-size: 18px;}
+}
+
+/*Cards*/
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px; /* 5px rounded corners */
+  background-color: #C4CAD0;
+  color: #001B2E;
+  max-width: 40%;
+  min-width: 300px;
+}
+
+/*Cards*/
+.cardorder {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px; /* 5px rounded corners */
+  background-color: #C4CAD0;
+  color: #001B2E;
+  max-width: 25%;
+  min-width: 250px;
+}
+
+/* Add rounded corners to the top left and the top right corner of the image */
+img.cardorder {
+  border-radius: 5px 5px 0 0;
+  min-width: 250px;
 }
