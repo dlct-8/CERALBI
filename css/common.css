@@ -162,7 +162,7 @@ ol {
   display: none;
 }
 
-/* Dropdown Button */
+/* Dropdown Button - Needs to be redone because it doesn't show*/
 .dropdown {
   float: left;
   overflow: hidden;
@@ -182,7 +182,8 @@ ol {
 
 .dropdown-content {
 	display: none;
-	position: fixed;
+	overflow: auto;
+	position: absolute;
 	background-color: #05477A;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -401,6 +402,21 @@ ol {
    border-radius: 50%;
  }
 
+ /*------------------
+  FAQs
+  -------------------*/
+
+	.faq-table {
+		margin-left: 50px;
+		margin-right: 50px;
+		margin-bottom: 54px;
+		overflow-y: auto;
+		background-color: #efefef;
+	}
+
+	.faq-table table {
+		width: 100%;
+	}
 /*------------------
   Footer Section
 ---------------------*/
