@@ -610,6 +610,24 @@ and when you move the mouse over it (hover)
 }
 
 /*------------------
+ About Us
+ -------------------*/
+ .rowAU {
+  display: flex;
+}
+
+.columnAU {
+  flex: 33.33%;
+  padding: 5px;
+}
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+ .columnAU {
+	 width: 100%;
+ }
+}
+
+/*------------------
  About Us Images
  -------------------*/
  .imgcontainer {
@@ -1386,8 +1404,9 @@ ul.breadcrumb li a:hover {
 .contact-form input[type=email],
 .contact-form textarea {
 	width: 100%;
-	border: none;
-	background: #DDE0E4;
+	border: 1px solid #05477A;
+	border-radius: 10px;
+	background: #EFEFEF;
 	font-size: 14px;
 	height: 52px;
 	margin-bottom: 23px;
@@ -1409,14 +1428,15 @@ ul.breadcrumb li a:hover {
 }
 
 .map-area {
-	height: 661px;
+	height: 600px;
 	background: #EFEFEF;
 	position: relative;
-	margin-top: -565px;
+	margin-top: -520px;
 }
 
 .map {
 	height: 100%;
+	width: 100%;
 }
 
 .contact-info-warp {

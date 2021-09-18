@@ -18,16 +18,17 @@
 
 	<!-- Stylesheets-->
 	<link rel="stylesheet" href="css/common.css"/>
+	<link rel="stylesheet" href="css/main.css"/>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://kit.fontawesome.com/cfe8b23fc4.js" crossorigin="anonymous"></script>
 
 </head>
 <header>
 
-	<!-- Page Preloder
+	<!-- Page Preloder-->
 	<div id="preloder">
 		<div class="loader"></div>
-	</div>-->
+	</div>
 
 	<!-- Header section -->
 		<!-- Top navigation -->
@@ -50,21 +51,19 @@
 			<a href="Contact.html">Contacto</a>
 			<a href="Help/CustomerServices.html">Ayuda</a>
 			<a href="Home.html">Inicio</a>
-			<a href="Help/CustomerServices.html">Cajas</a>
-			<div class="dropdown">
-  			<button class="dropbtn" onclick="dropdownMenu()">Cuadros
-    			<i class="fa fa-caret-down"></i>
-			  </button>
+			<a href="Sales/Cajas/Cajas.html">Cajas</a>
+			<a href="Sales/Cuadros/Cuadros.html">Cuadros</a>
+			<!--<div class="dropdown">
+  			<button class="dropbtn">Cuadros <i class="fa fa-caret-down"></i></button>
   			<div class="dropdown-content" id="myDropdown">
-    			<a href="#">Oficina</a>
-  			  <a href="#">Hogar</a>
-  			  <a href="#">Niños</a>
+    			<a href="Sales\Cuadros\Oficina\Oficina.html">Oficina</a>
+  			  <a href="Sales\Cuadros\Hogar\Hogar.html">Hogar</a>
   			</div>
-  		</div>
+  		</div>-->
 
 			<!-- Right-aligned links -->
 			<div class="topnav-right">
-				<a href="Help/CustomerServices.html">Mi Cuenta <i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+				<a href="Customers/Login.html">Mi Cuenta <i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
 				<div class="search-container">
     			<form action="/action_page.php">
       			<input type="text" placeholder="Search.." name="search">
@@ -93,14 +92,35 @@
 						Cabe destacar que no se abordará la parte contable que maneja la empresa.
 					</p>
 				</di>
-					<div class="imgcontainer">
-						<img src="Imgs/AboutUS/Diana.png" alt="Diana" class="avatar">
-						<img src="Imgs/AboutUS/Zayra.png" alt="Zayra" class="avatar">
-					</div>
-					<div>
-						<a class="site-btn btn-full" href="Home.html">Inicio</a>
-						<br>
+				<h3>Nuestro Equipo</h3>
+					<div class="rowAU">
+				   <div class="columnAU">
+						 <div class="card">
+	 						<div class="imgcontainer">
+	 							<img src="Imgs/AboutUS/Diana.png" alt="Diana" class="avatar">
+	 						</div>
+	  						<div class="container">
+	 							<h4><b>Diana Castro</b></h4>
+	 	 						<p>Diseño y Desarrollo de Software</p>
+	  						</div>
+	 					</div>
+				   </div>
+				   <div class="columnAU">
+						 <div class="card">
+	 						<div class="imgcontainer">
+	 							<img src="Imgs/AboutUS/Zayra.png" alt="Zayra" class="avatar">
+	 						</div>
+	  						<div class="container">
+	 							<h4><b>Zayra Guarín</b></h4>
+	 	 						<p>Diseño y Desarrollo de Software</p>
+	  						</div>
+	 					</div>
+				   </div>
+				 </div>
 
+					<div>
+						<br>
+						<a class="site-btn btn-full" href="Home.html">Inicio</a>
 					</div>
 	</div>
 
@@ -119,13 +139,13 @@
 			<ul class="list-unstyled nav-links">
 				<li><a href="Home.html">Inicio</a></li>
 				<li><a href="AboutUs.html">Nosotros</a></li>
-				<li><a href="Help/Help.html">Ayuda</a></li>
-				<li><a href="#">Contacto</a></li>
+				<li><a href="Help/CustomerServices.html">Ayuda</a></li>
+				<li><a href="Contact.html">Contacto</a></li>
 			</ul>
 		</div>
 		<div class="col-md">
 			<ul class="list-unstyled nav-links">
-				<li><a href="Customers/Login.html">Mi Cuenta</a></li>
+				<li><a href="Customers/MyAccount.html">Mi Cuenta</a></li>
 				<li><a href="StoreAdmin/Admin.html">Administrador</a></li>
 				<li><a href="NavMap.html">Mapa de Navegación</a></li>
 				<li><a href="ErrorPages/Error404.html">Error 404</a></li>
@@ -141,12 +161,12 @@
 		</div>
 		<div class="col-md text-md-center">
 			<ul class="social">
-				<li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+				<li><a href="https://www.instagram.com/encajascl/"><i class="fab fa-instagram-square"></i></a></li>
 				<li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
-				<li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+				<li><a href="https://www.facebook.com/publi.print.524"><i class="fab fa-facebook-square"></i></a></li>
 				<li><a href="#"><i class="fab fa-pinterest-square"></i></a></li>
 			</ul>
-			<br><br><p class=""><a href="#" class="btn btn-footer">Contact Us</a></p>
+			<br><br><p class=""><a href="Contact.html" class="btn btn-footer">Contáctanos</a></p>
 		</div>
 	</div>
 </div>
