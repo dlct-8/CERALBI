@@ -45,7 +45,7 @@
 		Agregar Productos</button>
  	<button class="tablinks" onclick="openTab(event, 'edit')"><i class="fas fa-edit"></i>
 		Editar Productos</button>
-		<button class="tablinks" onclick="openTab(event, 'bill')"><i class="fas fa-address-book"></i>
+		<button class="tablinks" onclick="openTab(event, 'customers')"><i class="fas fa-address-book"></i>
 			Gestión de Clientes</button>
 	<button class="tablinks" onclick="openTab(event, 'bill')"><i class="fas fa-file-invoice-dollar"></i>
 		Facturas</button>
@@ -683,7 +683,7 @@
 
 	</div>
 
-	<div id="bill" class="tabcontent">
+	<div id="customers" class="tabcontent">
 		<div>
 			<h2 class="tm-block-title">Clientes</h2>
 			<table class="table">
@@ -835,6 +835,120 @@
 			</table>
 	</div>
 
+	</div>
+
+	<div id="bill" class="tabcontent">
+		<center>
+			<div class="card">
+					<h2>Factura</h2>
+					<div>
+						<div class="card">
+							<h1>Ceralbi</h1>
+							<p>Desarrollo de software</p>
+							<p>Nit: 890000000-1</p>
+							<p>Bogotá D.C</p>
+						</div>
+						<div>
+							<img src="../Imgs\LogoAzulW.png" />
+						</div>
+					</div>
+
+					<hr />
+
+					<div>
+						<div>
+							<div class="col-md-6">
+								<input type="text" placeholder="N° Factura*:">
+							</div><br>
+							<div class="col-md-6">
+								<input type="text" placeholder="Fecha*:">
+							</div><br>
+							<div class="col-md-6">
+								<input type="text" placeholder="Fecha de vencimiento*:">
+							</div><br>
+							<div class="col-md-6">
+								<input type="text" placeholder="N° de pedido*:">
+							</div><br>
+							<div class="col-md-6">
+								<input type="text" placeholder="Cliente*:">
+							</div><br>
+							<div class="col-md-6">
+								<input type="text" placeholder="Nit/CC*:">
+							</div><br>
+							<div class="col-md-6">
+								<input type="text" placeholder="Teléfono*:">
+							</div><br>
+							<div class="col-md-6">
+								<input type="text" placeholder="Dirección*:">
+							</div><br>
+							<div class="col-md-6">
+								<input type="text" placeholder="Código Postal*:">
+							</div><br>
+							<select>
+								<option>Ciudad/Municipio *</option>
+							</select><br>
+							<div class="col-md-6">
+								<input type="text" placeholder="Correo Electrónico*:">
+							</div><br>
+							<div class="col-md-6">
+								<input type="text" placeholder="Método de pago*:">
+							</div><br>
+							<div class="checkbox-items">
+								<div class="ci-item">
+									<input type="checkbox" name="a" id="tandc">
+									<label for="tandc">Términos y Condiciones</label>
+								</div>
+							</div>
+
+					<div>
+						<table>
+							<thead>
+								<tr>
+									<th>Codigo Artículo</th>
+									<th>Iva</th>
+									<th>Cantidad</th>
+									<th>Total</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>123</td>
+									<td>19</td>
+									<td>3</td>
+									<td>60000</td>
+								</tr>
+								<tr>
+									<td>132</td>
+									<td>19</td>
+									<td>1</td>
+									<td>20000</td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<th></th>
+									<th></th>
+									<th>subtotal Factura</th>
+									<th>64.800</th><br>
+								</tr>
+								<tr>
+									<th></th>
+									<th></th>
+									<th>Iva</th>
+									<th>15.200</th>
+								</tr>
+								<tr>
+									<th></th>
+									<th></th>
+									<th>Total Factura</th>
+									<th>80.000</th>
+								</tr>
+							</tfoot>
+						</table>
+					</div>
+
+			</div>
+		</center>
 	</div>
 
 	<div id="inventory" class="tabcontent">
