@@ -21,6 +21,8 @@
 	<link rel="stylesheet" href="../css/main.css"/>
 	<link rel="stylesheet" href="../css/admin.css"/>
 	<link rel="stylesheet" href="../css/bootstrap.min.css"/>
+
+
 	<script src="https://kit.fontawesome.com/cfe8b23fc4.js" crossorigin="anonymous"></script>
 
 </head>
@@ -36,7 +38,7 @@
 	<img src="../Imgs/LogoAzulW.png" alt="Logo Ceralbi">
 	<div class="admin">
 		Administrador
-		<br><a href="#" style="font-size:13px;color:#EFEFEF;text-decoration:none;">
+		<br><a href="../Home.html" style="font-size:13px;color:#EFEFEF;text-decoration:none;">
 			Salir de la Cuenta</a>
 	</div>
  	<button class="tablinks active" onclick="openTab(event, 'dashboard')"><i class="fas fa-tachometer-alt"></i>
@@ -49,10 +51,10 @@
 			Gestión de Clientes</button>
 	<button class="tablinks" onclick="openTab(event, 'bill')"><i class="fas fa-file-invoice-dollar"></i>
 		Facturas</button>
-	<button class="tablinks" onclick="openTab(event, 'inventory')"><i class="fas fa-boxes"></i>
-		Inventario</button>
+	<!--<button class="tablinks" onclick="openTab(event, 'inventory')"><i class="fas fa-boxes"></i>
+	Inventario</button>
 	<button class="tablinks" onclick="openTab(event, 'sales')"><i class="fas fa-chart-line"></i>
-		Tendencias de Ventas</button>
+		Tendencias de Ventas</button>-->
 	<button class="tablinks" onclick="openTab(event, 'reports')"><i class="fas fa-file-contract"></i>
 		Reportes</button>
 	<button class="tablinks" onclick="openTab(event, 'contact')"><i class="fas fa-comment-dots"></i>
@@ -173,17 +175,17 @@
 	                </div>
 	                <div class="col-12 tm-block-col">
 	                    <div class="tm-bg-primary-dark tm-block tm-block-taller tm-block-scroll">
-	                        <h2 class="tm-block-title">Orders List</h2>
+	                        <h2 class="tm-block-title">Pedidos</h2>
 	                        <table class="table">
 	                            <thead>
 	                                <tr>
-	                                    <th scope="col">ORDER NO.</th>
-	                                    <th scope="col">STATUS</th>
-	                                    <th scope="col">OPERATORS</th>
-	                                    <th scope="col">LOCATION</th>
-	                                    <th scope="col">DISTANCE</th>
-	                                    <th scope="col">START DATE</th>
-	                                    <th scope="col">EST DELIVERY DUE</th>
+	                                    <th scope="col">N° ORDEN</th>
+	                                    <th scope="col">ESTADO</th>
+	                                    <th scope="col">CLIENTE</th>
+	                                    <th scope="col">DIRECCIÓN</th>
+	                                    <th scope="col">DISTANCIA</th>
+	                                    <th scope="col">FECHA INICIO</th>
+	                                    <th scope="col">ENTREGA ESTIMADA/th>
 	                                </tr>
 	                            </thead>
 	                            <tbody>
@@ -191,11 +193,10 @@
 	                                    <th scope="row"><b>#EFEFEF</b></th>
 	                                    <td>
 	                                        <div class="tm-status-circle moving">
-	                                        </div>Moving
-	                                    </td>
+	                                        </div>En proceso
 	                                    <td><b>Oliver Trag</b></td>
-	                                    <td><b>London, UK</b></td>
-	                                    <td><b>485 km</b></td>
+	                                    <td><b>Usme, Bogotá</b></td>
+	                                    <td><b>10 km</b></td>
 	                                    <td>16:00, 12 NOV 2018</td>
 	                                    <td>08:00, 18 NOV 2018</td>
 	                                </tr>
@@ -203,11 +204,11 @@
 	                                    <th scope="row"><b>#122348</b></th>
 	                                    <td>
 	                                        <div class="tm-status-circle pending">
-	                                        </div>Pending
+	                                        </div>Pendiente
 	                                    </td>
 	                                    <td><b>Jacob Miller</b></td>
-	                                    <td><b>London, UK</b></td>
-	                                    <td><b>360 km</b></td>
+	                                    <td><b>Bosa, Bogotá</b></td>
+	                                    <td><b>7 km</b></td>
 	                                    <td>11:00, 10 NOV 2018</td>
 	                                    <td>04:00, 14 NOV 2018</td>
 	                                </tr>
@@ -215,11 +216,11 @@
 	                                    <th scope="row"><b>#122347</b></th>
 	                                    <td>
 	                                        <div class="tm-status-circle cancelled">
-	                                        </div>Cancelled
+	                                        </div>Cancelado
 	                                    </td>
 	                                    <td><b>George Wilson</b></td>
-	                                    <td><b>London, UK</b></td>
-	                                    <td><b>340 km</b></td>
+	                                    <td><b>Suba, Bogotá</b></td>
+	                                    <td><b>2 km</b></td>
 	                                    <td>12:00, 22 NOV 2018</td>
 	                                    <td>06:00, 28 NOV 2018</td>
 	                                </tr>
@@ -227,11 +228,11 @@
 	                                    <th scope="row"><b>#122346</b></th>
 	                                    <td>
 	                                        <div class="tm-status-circle moving">
-	                                        </div>Moving
+	                                        </div>En proceso
 	                                    </td>
 	                                    <td><b>William Aung</b></td>
-	                                    <td><b>London, UK</b></td>
-	                                    <td><b>218 km</b></td>
+	                                    <td><b>Engativá, Bogotá</b></td>
+	                                    <td><b>3 km</b></td>
 	                                    <td>15:00, 10 NOV 2018</td>
 	                                    <td>09:00, 14 NOV 2018</td>
 	                                </tr>
@@ -239,11 +240,11 @@
 	                                    <th scope="row"><b>#122345</b></th>
 	                                    <td>
 	                                        <div class="tm-status-circle pending">
-	                                        </div>Pending
+	                                        </div>Pendiente
 	                                    </td>
 	                                    <td><b>Harry Ryan</b></td>
-	                                    <td><b>London, UK</b></td>
-	                                    <td><b>280 km</b></td>
+	                                    <td><b>Usme</b></td>
+	                                    <td><b>9 km</b></td>
 	                                    <td>15:00, 11 NOV 2018</td>
 	                                    <td>09:00, 17 NOV 2018</td>
 	                                </tr>
@@ -251,11 +252,11 @@
 	                                    <th scope="row"><b>#122344</b></th>
 	                                    <td>
 	                                        <div class="tm-status-circle pending">
-	                                        </div>Pending
+	                                        </div>Pendiente
 	                                    </td>
 	                                    <td><b>Michael Jones</b></td>
-	                                    <td><b>London, UK</b></td>
-	                                    <td><b>218 km</b></td>
+	                                    <td><b>Usaquen, Bogotá</b></td>
+	                                    <td><b>4km</b></td>
 	                                    <td>18:00, 12 OCT 2018</td>
 	                                    <td>06:00, 18 OCT 2018</td>
 	                                </tr>
@@ -263,11 +264,11 @@
 	                                    <th scope="row"><b>#122343</b></th>
 	                                    <td>
 	                                        <div class="tm-status-circle moving">
-	                                        </div>Moving
+	                                        </div>En proceso
 	                                    </td>
 	                                    <td><b>Timmy Davis</b></td>
-	                                    <td><b>London, UK</b></td>
-	                                    <td><b>218 km</b></td>
+	                                    <td><b>Bosa</b></td>
+	                                    <td><b>8 km</b></td>
 	                                    <td>12:00, 10 OCT 2018</td>
 	                                    <td>08:00, 18 OCT 2018</td>
 	                                </tr>
@@ -275,11 +276,11 @@
 	                                    <th scope="row"><b>#122342</b></th>
 	                                    <td>
 	                                        <div class="tm-status-circle moving">
-	                                        </div>Moving
+	                                        </div>En proceso
 	                                    </td>
 	                                    <td><b>Oscar Phyo</b></td>
-	                                    <td><b>London, UK</b></td>
-	                                    <td><b>420 km</b></td>
+	                                    <td><b>Suba, Bogotá</b></td>
+	                                    <td><b>1 km</b></td>
 	                                    <td>15:30, 06 OCT 2018</td>
 	                                    <td>09:30, 16 OCT 2018</td>
 	                                </tr>
@@ -287,11 +288,11 @@
 	                                    <th scope="row"><b>#122341</b></th>
 	                                    <td>
 	                                        <div class="tm-status-circle moving">
-	                                        </div>Moving
+	                                        </div>En proceso
 	                                    </td>
 	                                    <td><b>Charlie Brown</b></td>
-	                                    <td><b>London, UK</b></td>
-	                                    <td><b>300 km</b></td>
+	                                    <td><b>Engativá</b></td>
+	                                    <td><b>3 km</b></td>
 	                                    <td>11:00, 10 OCT 2018</td>
 	                                    <td>03:00, 14 OCT 2018</td>
 	                                </tr>
@@ -299,11 +300,11 @@
 	                                    <th scope="row"><b>#122340</b></th>
 	                                    <td>
 	                                        <div class="tm-status-circle cancelled">
-	                                        </div>Cancelled
+	                                        </div>Cancelado
 	                                    </td>
 	                                    <td><b>Wilson Cookies</b></td>
-	                                    <td><b>London, UK</b></td>
-	                                    <td><b>218 km</b></td>
+	                                    <td><b>Barrios Unidos, Bogotá</b></td>
+	                                    <td><b>5 km</b></td>
 	                                    <td>17:30, 12 OCT 2018</td>
 	                                    <td>08:30, 22 OCT 2018</td>
 	                                </tr>
@@ -311,10 +312,10 @@
 	                                    <th scope="row"><b>#122339</b></th>
 	                                    <td>
 	                                        <div class="tm-status-circle moving">
-	                                        </div>Moving
+	                                        </div>En proceso
 	                                    </td>
 	                                    <td><b>Richard Clamon</b></td>
-	                                    <td><b>London, UK</b></td>
+	                                    <td><b>Usme, Bogotá</b></td>
 	                                    <td><b>150 km</b></td>
 	                                    <td>15:00, 12 OCT 2018</td>
 	                                    <td>09:20, 26 OCT 2018</td>
@@ -378,18 +379,23 @@
 		</div>
 		<div class="row tm-edit-product-row">
 			<div class="col-xl-6 col-lg-6 col-md-12">
-				<form action="" class="tm-edit-product-form">
+				<form action="" class="needs-validation" novalidate>
 					<div class="form-group mb-3">
-						<label for="name">Nombre
-						</label>
-						<input id="name" name="name" type="text" class="form-control validate" required>
+						<label for="validationCostum01" class="form-label">Nombre</label>
+						<input type="text" class="form-control"id="validationCostum01"required>
+						<div class="invalid-feedback">
+						El nombre del producto es obligatorio.
+					</div>
 					</div>
 					<div class="form-group mb-3">
-						<label for="description">Descripción</label>
-						<textarea class="form-control validate" rows="3" required></textarea>
+						<label for="validationCostum01" class="form-label">Descripción</label>
+						<textarea class="form-control validate" id="validationCostum01"rows="3" required></textarea>
+						<div class="invalid-feedback">
+						Descripción del producto.
+					</div>
 					</div>
 					<div class="form-group mb-3">
-						<label for="category">Categoría</label>
+						<label for="validationCostum01" class="form-label">Categoría</label>
 						<select class="custom-select tm-select-accounts" id="category">
 							<a href=""><i class="fas fa-angle-down"></i></a>
 							<option selected="">Seleccionar Categoría</option>
@@ -407,27 +413,59 @@
 						<div class="form-group mb-3 col-xs-12 col-sm-6">
 							<label for="stock">Unidades en Inventario
 							</label>
-							<input id="stock" name="stock" type="text" class="form-control validate" required>
+							<input  type="text" class="form-control validate" id="validationCostum01" required>
+							<div class="invalid-feedback">
+							Descripción del producto.
+						</div>
 						</div>
 					</div>
 
-				</form>
 			</div>
+
 			<div class="col-xl-6 col-lg-6 col-md-12 mx-auto mb-4">
 				<div class="tm-product-img-dummy mx-auto">
 					<i class="fas fa-cloud-upload-alt tm-upload-icon" onclick="document.getElementById('fileInput').click();"></i>
 				</div>
 				<div class="custom-file mt-3 mb-3">
 					<input id="fileInput" type="file" style="display:none;">
-					<input type="button" class="site-btn btn-block mx-auto" value="Foto del Producto" onclick="document.getElementById('fileInput').click();">
+
+					<input type="button"  class="site-btn btn-block mx-auto" value="Foto del Producto" onclick="document.getElementById('fileInput').click();">
 				</div>
 			</div>
 			<div class="col-12">
-				<button type="submit" class="site-btn btn-block text-uppercase">Agregar el Producto</button>
+				<div  id="liveAlertPlaceholder"></div>
+				<button type="submit" class="site-btn btn-block text-uppercase" id="liveAlertBtn">Agregar el Producto</button>
 			</div>
-
+</form>
 		</div>
 	</div>
+	<!--Script de validación-->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+	<script type="text/jscript">
+	// Example starter JavaScript for disabling form submissions if there are invalid fields
+	(function () {
+		'use strict'
+
+		// Fetch all the forms we want to apply custom Bootstrap validation styles to
+		var forms = document.querySelectorAll('.needs-validation')
+
+		// Loop over them and prevent submission
+		Array.prototype.slice.call(forms)
+			.forEach(function (form) {
+				form.addEventListener('submit', function (event) {
+					if (!form.checkValidity()) {
+						event.preventDefault()
+						event.stopPropagation()
+					}
+
+					form.classList.add('was-validated')
+				}, false)
+			})
+	})()
+	</script>
+
+
+
 
 	<div id="edit" class="tabcontent">
 
@@ -689,147 +727,107 @@
 			<table class="table">
 					<thead>
 							<tr>
-									<th scope="col">ORDER NO.</th>
-									<th scope="col">STATUS</th>
-									<th scope="col">OPERATORS</th>
-									<th scope="col">LOCATION</th>
-									<th scope="col">DISTANCE</th>
-									<th scope="col">START DATE</th>
-									<th scope="col">EST DELIVERY DUE</th>
+									<th scope="col">Código Cliente</th>
+									<th scope="col">Nombre</th>
+									<th scope="col">Dirección</th>
+									<th scope="col">E-mail</th>
+									<th scope="col">Teléfono</th>
 							</tr>
 					</thead>
 					<tbody>
 							<tr>
 									<th scope="row"><b>#EFEFEF</b></th>
-									<td>
-											<div class="tm-status-circle moving">
-											</div>Moving
-									</td>
 									<td><b>Oliver Trag</b></td>
 									<td><b>London, UK</b></td>
-									<td><b>485 km</b></td>
-									<td>16:00, 12 NOV 2018</td>
-									<td>08:00, 18 NOV 2018</td>
+									<td><b>oliver@gmail.com</b></td>
+									<td>3106596314</td>
 							</tr>
 							<tr>
 									<th scope="row"><b>#122348</b></th>
-									<td>
-											<div class="tm-status-circle pending">
-											</div>Pending
-									</td>
 									<td><b>Jacob Miller</b></td>
 									<td><b>London, UK</b></td>
-									<td><b>360 km</b></td>
-									<td>11:00, 10 NOV 2018</td>
-									<td>04:00, 14 NOV 2018</td>
+									<td><b>jacob@gmail.com</b></td>
+									<td>320659871</td>
 							</tr>
 							<tr>
 									<th scope="row"><b>#122347</b></th>
-									<td>
-											<div class="tm-status-circle cancelled">
-											</div>Cancelled
-									</td>
+
 									<td><b>George Wilson</b></td>
 									<td><b>London, UK</b></td>
-									<td><b>340 km</b></td>
-									<td>12:00, 22 NOV 2018</td>
-									<td>06:00, 28 NOV 2018</td>
+									<td><b>gorge@hotmail.com</b></td>
+									<td>32145664</td>
 							</tr>
 							<tr>
 									<th scope="row"><b>#122346</b></th>
-									<td>
-											<div class="tm-status-circle moving">
-											</div>Moving
-									</td>
+
 									<td><b>William Aung</b></td>
 									<td><b>London, UK</b></td>
-									<td><b>218 km</b></td>
-									<td>15:00, 10 NOV 2018</td>
-									<td>09:00, 14 NOV 2018</td>
+									<td><b>wilian@hotmail</b></td>
+									<td>36587151</td>
+
 							</tr>
 							<tr>
 									<th scope="row"><b>#122345</b></th>
-									<td>
-											<div class="tm-status-circle pending">
-											</div>Pending
-									</td>
+
 									<td><b>Harry Ryan</b></td>
 									<td><b>London, UK</b></td>
-									<td><b>280 km</b></td>
-									<td>15:00, 11 NOV 2018</td>
-									<td>09:00, 17 NOV 2018</td>
+									<td><b>harry@gmail.com</b></td>
+									<td>36545882</td>
+
 							</tr>
 							<tr>
 									<th scope="row"><b>#122344</b></th>
-									<td>
-											<div class="tm-status-circle pending">
-											</div>Pending
-									</td>
+
 									<td><b>Michael Jones</b></td>
 									<td><b>London, UK</b></td>
-									<td><b>218 km</b></td>
-									<td>18:00, 12 OCT 2018</td>
-									<td>06:00, 18 OCT 2018</td>
+									<td><b>Michael@gmail.com</b></td>
+									<td>332145524</td>
+
 							</tr>
 							<tr>
 									<th scope="row"><b>#122343</b></th>
-									<td>
-											<div class="tm-status-circle moving">
-											</div>Moving
-									</td>
+
 									<td><b>Timmy Davis</b></td>
 									<td><b>London, UK</b></td>
-									<td><b>218 km</b></td>
-									<td>12:00, 10 OCT 2018</td>
-									<td>08:00, 18 OCT 2018</td>
+									<td><b>timmy@gmail.com</b></td>
+									<td>321455245</td>
+
 							</tr>
 							<tr>
 									<th scope="row"><b>#122342</b></th>
-									<td>
-											<div class="tm-status-circle moving">
-											</div>Moving
-									</td>
+
 									<td><b>Oscar Phyo</b></td>
 									<td><b>London, UK</b></td>
-									<td><b>420 km</b></td>
-									<td>15:30, 06 OCT 2018</td>
-									<td>09:30, 16 OCT 2018</td>
+									<td><b>oscar@gmail.com</b></td>
+									<td>314566856</td>
+
 							</tr>
 							<tr>
 									<th scope="row"><b>#122341</b></th>
-									<td>
-											<div class="tm-status-circle moving">
-											</div>Moving
-									</td>
+
 									<td><b>Charlie Brown</b></td>
 									<td><b>London, UK</b></td>
-									<td><b>300 km</b></td>
-									<td>11:00, 10 OCT 2018</td>
-									<td>03:00, 14 OCT 2018</td>
+									<td><b>charlie@gmail.com</b></td>
+									<td>341255882</td>
+
 							</tr>
 							<tr>
 									<th scope="row"><b>#122340</b></th>
-									<td>
-											<div class="tm-status-circle cancelled">
-											</div>Cancelled
-									</td>
+
 									<td><b>Wilson Cookies</b></td>
 									<td><b>London, UK</b></td>
-									<td><b>218 km</b></td>
-									<td>17:30, 12 OCT 2018</td>
-									<td>08:30, 22 OCT 2018</td>
+									<td><b>hjk@gmail.com</b></td>
+									<td>31456688</td>
+
 							</tr>
 							<tr>
 									<th scope="row"><b>#122339</b></th>
-									<td>
-											<div class="tm-status-circle moving">
-											</div>Moving
-									</td>
+
 									<td><b>Richard Clamon</b></td>
 									<td><b>London, UK</b></td>
-									<td><b>150 km</b></td>
-									<td>15:00, 12 OCT 2018</td>
-									<td>09:20, 26 OCT 2018</td>
+									<td><b>richar@gmail.com</b></td>
+									<td>315326445</td>
+
 							</tr>
 					</tbody>
 			</table>
@@ -857,49 +855,84 @@
 
 					<div>
 						<div>
+							<form action="" class="needs-validation" novalidate>
 							<div class="col-md-6">
-								<input type="text" placeholder="N° Factura*:">
+								<input type="text" class="form-control"id="validationCostum01" placeholder="N° Factura*:"required>
+								<div class="invalid-feedback">
+								Este campo es obligatorio..
+								</div>
 							</div><br>
 							<div class="col-md-6">
-								<input type="text" placeholder="Fecha*:">
+								<input type="text" class="form-control"id="validationCostum01" placeholder="Fecha*:"required>
+								<div class="invalid-feedback">
+								Este campo es obligatorio..
+								</div>
 							</div><br>
 							<div class="col-md-6">
-								<input type="text" placeholder="Fecha de vencimiento*:">
+								<input type="text" class="form-control"id="validationCostum01" placeholder="Fecha de vencimiento*:"required>
+								<div class="invalid-feedback">
+								Este campo es obligatorio..
+								</div>
 							</div><br>
 							<div class="col-md-6">
-								<input type="text" placeholder="N° de pedido*:">
+								<input type="text" class="form-control"id="validationCostum01" placeholder="N° de pedido*:"required>
+								<div class="invalid-feedback">
+								Este campo es obligatorio..
+								</div>
 							</div><br>
 							<div class="col-md-6">
-								<input type="text" placeholder="Cliente*:">
+								<input type="text" class="form-control"id="validationCostum01" placeholder="Cliente*:"required>
+								<div class="invalid-feedback">
+								Este campo es obligatorio..
+								</div>
 							</div><br>
 							<div class="col-md-6">
-								<input type="text" placeholder="Nit/CC*:">
+								<input type="text" class="form-control"id="validationCostum01" placeholder="Nit/CC*:"required>
+								<div class="invalid-feedback">
+								Este campo es obligatorio..
+								</div>
 							</div><br>
 							<div class="col-md-6">
-								<input type="text" placeholder="Teléfono*:">
+								<input type="text" class="form-control"id="validationCostum01" placeholder="Teléfono*:"required>
+								<div class="invalid-feedback">
+								Este campo es obligatorio..
+								</div>
 							</div><br>
 							<div class="col-md-6">
-								<input type="text" placeholder="Dirección*:">
+								<input type="text" class="form-control"id="validationCostum01" placeholder="Dirección*:"required>
+								<div class="invalid-feedback">
+								Este campo es obligatorio..
+								</div>
 							</div><br>
 							<div class="col-md-6">
-								<input type="text" placeholder="Código Postal*:">
-							</div><br>
-							<select>
-								<option>Ciudad/Municipio *</option>
-							</select><br>
-							<div class="col-md-6">
-								<input type="text" placeholder="Correo Electrónico*:">
+								<input type="text" class="form-control"id="validationCostum01" placeholder="Ciudad/Municipio *:"required>
+								<div class="invalid-feedback">
+								Este campo es obligatorio..
+								</div>
 							</div><br>
 							<div class="col-md-6">
-								<input type="text" placeholder="Método de pago*:">
+								<input type="text" class="form-control"id="validationCostum01" placeholder="Correo Electrónico*:"required>
+								<div class="invalid-feedback">
+								Este campo es obligatorio..
+								</div>
+							</div><br>
+							<div class="col-md-6">
+								<input type="text" class="form-control"id="validationCostum01" placeholder="Método de pago*:"required>
+								<div class="invalid-feedback">
+								Este campo es obligatorio..
+								</div>
 							</div><br>
 							<div class="checkbox-items">
 								<div class="ci-item">
-									<input type="checkbox" name="a" id="tandc">
+									<input type="checkbox" name="a" class="form-control"id="validationCostum01" required>
 									<label for="tandc">Términos y Condiciones</label>
 								</div>
 							</div>
-
+							<div  id="liveAlertPlaceholder"></div>
+							<div class="text-center">
+								<button class="site-btn" id="liveAlertBtn">Generar factura</button>
+							</div>
+</form>
 					<div>
 						<table>
 							<thead>
@@ -951,17 +984,96 @@
 		</center>
 	</div>
 
+
 	<div id="inventory" class="tabcontent">
 
  </div><!---inv--->
 
 	<div id="sales" class="tabcontent">
-
+		<div>
+		<p>Est es la pagina de tendencias de ventas</p>
+		</div>
 	</div>
 
-	<div id="report" class="tabcontent">
+	<div id="reports" class="tabcontent">
+		<!--reportes-->
+
+
+
+
+		<div id="page-inner">
+		<div>
+			<br><h2>Reportes</h2>
+
+
+		<div class="dashboard-cards">
+			<div class="container">
+
+  <div class="row g-2">
+    <div class="col-6">
+      <div class="p-3 border bg-light" ><strong>INGRESOS</strong>	<h3>15,666</h3><img src="../Imgs\Ganancias.png" alt="ventas"></div>
+    </div>
+    <div class="col-6">
+      <div class="p-3 border bg-light"><strong>VENTAS</strong><h3>36,540</h3><img src="../Imgs\Gafica ventas.png" alt="ventas"></div>
+    </div>
+		<div class="row g-2">
+	    <div class="col-6">
+	      <div class="p-3 border bg-light"><strong>	<h4>Ganancias</h4></strong>	<h3>84,198</h3></div>
+	    </div>
+			<div class="col-6">
+	      <div class="p-3 border bg-light"><strong><h4>Porcentaje de Visitas</h4></strong><h3>46%</h3></div>
+	    </div>
+    <div class="col-6">
+      <div class="p-3 border bg-light"><strong>PRODUCTOS</strong><h3>24,225</h3></div>
+    </div>
+    <div class="col-6">
+      <div class="p-3 border bg-light"><strong>VISITAS</strong><h3>24,225</h3></div>
+    </div>
+
+
+	    <div class="col-6">
+	      <div class="p-3 border bg-light"><strong>Clientes</strong><h3>84%</h3></div>
+	    </div>
+	    <div class="col-6">
+	      <div class="p-3 border bg-light"><strong>Ventas</strong><h3>55%</h3></div>
+	    </div>
+  </div>
+</div>
+
+
 
 	</div>
+		</div>
+	</div>
+</div>
+</div>
+
+
+
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+	<script type="text/jscript">
+	// Example starter JavaScript for disabling form submissions if there are invalid fields
+	(function () {
+		'use strict'
+
+		// Fetch all the forms we want to apply custom Bootstrap validation styles to
+		var forms = document.querySelectorAll('.needs-validation')
+
+		// Loop over them and prevent submission
+		Array.prototype.slice.call(forms)
+			.forEach(function (form) {
+				form.addEventListener('submit', function (event) {
+					if (!form.checkValidity()) {
+						event.preventDefault()
+						event.stopPropagation()
+					}
+
+					form.classList.add('was-validated')
+				}, false)
+			})
+	})()
+	</script>
 
 	<div id="contact" class="tabcontent">
 		<div class="row justify-content-center">
@@ -970,48 +1082,84 @@
 					<div class="row">
 						<div class="col-md-7">
 							<div class="contact-wrap p-md-5 p-4">
-								<h3 class="mb-4">Contáctanos</h3>
+								<h3 class="mb-4">Contácto-cliente</h3>
 								<div id="form-message-warning" class="mb-4"></div>
 								<div id="form-message-success" class="mb-4">
 									Tu mensaje ha sido enviado ¡Gracias!
 								</div>
-								<form method="POST" id="contactForm" name="contactForm" class="contactForm" novalidate="novalidate">
+
 									<div class="row">
-										<div class="col-md-6">
+										<form action="" class="needs-validation" novalidate>
+										<div class="col-md-12">
 											<div class="form-group">
-												<label class="label" for="name">Nombre Completo</label>
-												<input type="text" class="form-control" name="name" id="name" placeholder="Name" required>
-											</div>
-										</div>
-										<div class="col-md-6">
-											<div class="form-group">
-												<label class="label" for="email">Correo Electrónico</label>
-												<input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
+												<label for="validationCostum01" class="form-label">Nombre Completo</label>
+												<input type="text" class="form-control"id="validationCostum01" placeholder="Name" required>
+												<div class="invalid-feedback">
+												Este campo es obligatorio..
+												</div>
 											</div>
 										</div>
 										<div class="col-md-12">
 											<div class="form-group">
-												<label class="label" for="subject">Asunto</label>
-												<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+												<label for="validationCostum01" class="form-label">Correo Electrónico</label>
+												<input type="email" class="form-control"id="validationCostum01" placeholder="Email" required>
+												<div class="invalid-feedback">
+												Este campo es obligatorio..
+												</div>
 											</div>
 										</div>
 										<div class="col-md-12">
 											<div class="form-group">
-												<label class="label" for="#">Mensaje</label>
-												<textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Message" required></textarea>
+												<label for="validationCostum01" class="form-label">Asunto</label>
+												<input type="text" class="form-control"id="validationCostum01" placeholder="Subject" required>
+												<div class="invalid-feedback">
+												Este campo es obligatorio..
+												</div>
 											</div>
 										</div>
 										<div class="col-md-12">
 											<div class="form-group">
-												<input type="submit" value="Enviar Mensaje" class="site-btn" required>
+												<label for="validationCostum01" class="form-label">Mensaje</label>
+												<textarea name="message" class="form-control"id="validationCostum01" cols="30" rows="4" placeholder="Message" required></textarea>
+												<div class="invalid-feedback">
+												Este campo es obligatorio..
+												</div>
+											</div>
+										</div>
+										<div class="col-md-12">
+											<div class="form-group">
+												<div  id="liveAlertPlaceholder"></div>
+												<input type="submit" value="Enviar Mensaje" class="site-btn" id="liveAlertBtn">
 												<div class="submitting"></div>
 											</div>
 										</div>
-
-
 									</div>
 								</form>
 							</div>
+							<!--Script Validación-->
+							<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+							<script type="text/jscript">
+							// Example starter JavaScript for disabling form submissions if there are invalid fields
+							(function () {
+								'use strict'
+
+								// Fetch all the forms we want to apply custom Bootstrap validation styles to
+								var forms = document.querySelectorAll('.needs-validation')
+
+								// Loop over them and prevent submission
+								Array.prototype.slice.call(forms)
+									.forEach(function (form) {
+										form.addEventListener('submit', function (event) {
+											if (!form.checkValidity()) {
+												event.preventDefault()
+												event.stopPropagation()
+											}
+
+											form.classList.add('was-validated')
+										}, false)
+									})
+							})()
+							</script>
 
 
 						</div>
@@ -1085,5 +1233,47 @@
 	<script src="../js/sly.min.js"></script>
 	<script src="../js/jquery.nicescroll.min.js"></script>
 	<script src="../js/main.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+	<script type="text/jscript">
+	// Example starter JavaScript for disabling form submissions if there are invalid fields
+	(function () {
+		'use strict'
+
+		// Fetch all the forms we want to apply custom Bootstrap validation styles to
+		var forms = document.querySelectorAll('.needs-validation')
+
+		// Loop over them and prevent submission
+		Array.prototype.slice.call(forms)
+			.forEach(function (form) {
+				form.addEventListener('submit', function (event) {
+					if (!form.checkValidity()) {
+						event.preventDefault()
+						event.stopPropagation()
+					}
+
+					form.classList.add('was-validated')
+				}, false)
+			})
+	})()
+	</script>
+	<!--Script de alerta-->
+						<script>
+						var alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+						var alertTrigger = document.getElementById('liveAlertBtn')
+
+						function alert(message, type) {
+						var wrapper = document.createElement('div')
+						wrapper.innerHTML = '<div class="alert alert-' + type + ' alert-dismissible" role="alert">' + message + '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>'
+
+						alertPlaceholder.append(wrapper)
+						}
+
+						if (alertTrigger) {
+						alertTrigger.addEventListener('click', function () {
+							alert('Debes ingresar datos válidos', 'danger')
+						})
+						}
+						</script>
+
     </body>
 </html>

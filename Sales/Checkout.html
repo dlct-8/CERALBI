@@ -86,43 +86,100 @@
 		<!-- Page -->
 		<div class="page-area cart-page spad">
 			<div class="container">
-				<form class="checkout-form">
+				<form class="checkout-form " >
 					<div class="row">
 						<div class="col-lg-6">
 							<h4 class="checkout-title">Dirección de Facturación</h4>
+
 							<div class="row">
 								<div class="col-md-6">
-									<input type="text" placeholder="Nombre *">
+									<form action="Cart.html" class="needs-validation" novalidate>
+									<label for="validationCostum01" class="form-label"></label>
+									<input type="text" style="background-color: #e0e3e4;" class="form-control"id="validationCostum01" value=""  placeholder="Nombre *" required>
+								<div class="invalid-feedback">
+								El nombre es obligatorio.
+							</div>
 								</div>
 								<div class="col-md-6">
-									<input type="text" placeholder="Apellido *">
+									<label for="validationCostum01" class="form-label"></label>
+									<input type="text" style="background-color: #e0e3e4;" class="form-control" id="validationServer02" value=""  placeholder="Apellido *" required>
+									<div class="invalid-feedback">
+			      			El apellido es obligatorio.
+			    				</div>
 								</div>
 								<div class="col-md-12">
-									<input type="text" placeholder="Compañía">
-									<select>
+									<label for="validationCostum01" class="form-label"></label>
+									<input type="text" style="background-color: #e0e3e4;"  value=""  placeholder="Compañía">
+									<div class="invalid-feedback">
+			      			El apellido es obligatorio.
+			    				</div>
+									<select required>
 										<option>País *</option>
 										<option>Colombia</option>
 										<option>USA</option>
 										<option>Otro</option>
 									</select>
-									<input type="text" placeholder="Dirección *">
-									<input type="text">
-									<input type="text" placeholder="Código Postal">
-									<select>
+									<label for="validationCostum01" class="form-label"></label>
+									<input type="text" style="background-color: #e0e3e4;" class="form-control" id="validationServer02" value=""  placeholder="Dirección *" required>
+									<div class="invalid-feedback">
+			      			Este campo es obligatorio..
+			    				</div>
+
+									<label for="validationCostum01" class="form-label"></label>
+									<select required>
 										<option>Ciudad/Municipio *</option>
 									</select>
-									<input type="text" placeholder="Teléfono *">
-									<input type="email" placeholder="Correo Electrónico *">
+									<label for="validationCostum01" class="form-label"></label>
+									<input type="text" style="background-color: #e0e3e4;" class="form-control" id="validationServer02" placeholder="Teléfono *" required>
+									<div class="invalid-feedback">
+			      			El Teléfono es obligatorio.
+			    				</div>
+									<label for="validationCostum01" class="form-label"></label>
+									<input type="email" style="background-color: #e0e3e4;" class="form-control" id="validationServer02" placeholder="Correo Electrónico *" required>
+									<div class="invalid-feedback">
+			      			El Email es obligatorio.
+			    				</div>
 									<div class="checkbox-items">
 										<div class="ci-item">
-											<input type="checkbox" name="a" id="tandc">
-											<label for="tandc">Términos y Condiciones</label>
+											<input style="background-color: #e0e3e4;" class="form-check-input" type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
+										 <label class="form-check-label" for="invalidCheck3">
+											 Acepta los términos y condiciones
+										 </label>
+										 <div id="invalidCheck3Feedback" class="invalid-feedback">
+											 Debes estar de acuerdo antes de enviar.
+										 </div>
 										</div>
 										<div class="ci-item">
 											<input type="checkbox" name="b" id="newaccount">
-											<label for="newaccount">Crear Cuenta</label>
+											<label for="newaccount">Ingresar a mi Cuenta</label>
 											<input type="password" placeholder="Contraseña">
 										</div>
+										<div class="text-center">
+											<button class="site-btn">Guardar</button>
+										</div>
+						<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+										<script type="text/jscript">
+										// Example starter JavaScript for disabling form submissions if there are invalid fields
+										(function () {
+										  'use strict'
+
+										  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+										  var forms = document.querySelectorAll('.needs-validation')
+
+										  // Loop over them and prevent submission
+										  Array.prototype.slice.call(forms)
+										    .forEach(function (form) {
+										      form.addEventListener('submit', function (event) {
+										        if (!form.checkValidity()) {
+										          event.preventDefault()
+										          event.stopPropagation()
+										        }
+
+										        form.classList.add('was-validated')
+										      }, false)
+										    })
+										})()
+										</script>
 									<!--	<div class="ci-item">
 											<input type="checkbox" name="c" id="newsletter">
 											<label for="newsletter">Suscribirse al Catálogo</label>
@@ -130,6 +187,7 @@
 									</div>
 								</div>
 							</div>
+						</form>
 						</div>
 						<div class="col-lg-6">
 							<div class="order-card">
@@ -260,6 +318,29 @@
 		<script src="../js/sly.min.js"></script>
 		<script src="../js/jquery.nicescroll.min.js"></script>
 		<script src="../js/main.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+		<script type="text/jscript">
+		// Example starter JavaScript for disabling form submissions if there are invalid fields
+		(function () {
+		  'use strict'
+
+		  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+		  var forms = document.querySelectorAll('.needs-validation')
+
+		  // Loop over them and prevent submission
+		  Array.prototype.slice.call(forms)
+		    .forEach(function (form) {
+		      form.addEventListener('submit', function (event) {
+		        if (!form.checkValidity()) {
+		          event.preventDefault()
+		          event.stopPropagation()
+		        }
+
+		        form.classList.add('was-validated')
+		      }, false)
+		    })
+		})()
+		</script>
 	</body>
 
 </html>
