@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<title>Login</title>
+	<title>Recuperar contraseña</title>
 	<meta charset="UTF-8">
 	<meta name="description" content="Ceralbi - La tienda en línea">
 	<meta name="keywords" content="ceralbi, Encajas, eCommerce, cuadros, html">
@@ -22,9 +22,6 @@
 	<link rel="stylesheet" href="../css/main.css"/>
 	<link rel="stylesheet" href="../css/login.css"/>
 	<link rel="stylesheet" href="../css/animate.css"/>
-	<!--JS Alerta-->
-
-
 </head>
 <header>
 	<!-- Page Preloder -->
@@ -48,7 +45,7 @@
 			<a href="../Contact.html">Contacto</a>
 			<a href="../Help/CustomerServices.html">Ayuda</a>
 			<a href="../Home.html">Inicio</a>
-		<!--	<a href="../Sales/Cajas/Cajas.html">Cajas</a>
+			<!--<a href="../Sales/Cajas/Cajas.html">Cajas</a>
 			<a href="../Sales/Cuadros/Cuadros.html">Cuadros</a>-->
 			<!--<div class="dropdown">
   			<button class="dropbtn" onclick="dropdownMenu()">Cuadros
@@ -62,7 +59,7 @@
 
 			<!-- Right-aligned links -->
 			<div class="topnav-right">
-				<a href="#"class="active">Mi Cuenta <i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+				<a href="Login.html"class="active">Mi Cuenta <i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
 				<div class="search-container">
 					<form action="/action_page.php">
 						<input type="text" placeholder="Buscar..." name="search">
@@ -78,63 +75,33 @@
 
 <body>
 	<br><br>
-	<div class="global-container">
-		<div class="card login-form">
-			<div class="card-body">
-				<h3 class="card-title text-center">Iniciar sesión</h3>
-					<div class="logo-is">
-						<img src="../Imgs/LogoBlanco.png" alt="Logo Ceralbi">
-					</div>
-				<div class="card-text">
-					<form action="../StoreAdmin/Admin.html" class="needs-validation" novalidate >
-						<!-- to error: add class "has-danger" -->
-						<div class="form-group">
-							<label for="validationUsername" >Usuario</label><br>
-							<input type="email" style="background-color: #e0e3e4;" class="form-control"id="validationUsername" placeholder="usuario@tuemail.com *" required>
-							<div class="invalid-feedback">
-      			  Ingresa un usuario válido.
-      			</div>
-						</div>
-						<br>
-						<div class="form-group">
-							<label for="validationPassword" >Contraseña</label>
-							<input type="password" style="background-color: #e0e3e4;"  class="form-control" id="validationPassword"  required>
-							<div class="invalid-feedback">
-							Ingresa una contraseña.
-						</div>
-							<br><a href="Recup.html" style="float:right;font-size:12px;">Recuperar contraseña</a><br>
-						</div>
-						<div  id="liveAlertPlaceholder"></div>
-								<p class="centrado">
-							<input type="submit" onclick="Alerta()" class="site-btn btn-full" id="liveAlertBtn" value="Ingresar" >
-						</p>
-						<div class="sign-up">
-							Aún no tienes una cuenta? <a href="../Customers\Register.html">Regístrate</a>
-						</div>
-					</form>
-				</div>
+    <div class="page-area contact-page">
+		<div class="container spad">
+			<div class="text-center">
+				<h4 class="contact-title">Recuperar contraseña</h4>
 			</div>
-		</div>
-	</div>
-<br><br>
-<!--Script de alerta-->
-					<script>
-					var alertPlaceholder = document.getElementById('liveAlertPlaceholder')
-					var alertTrigger = document.getElementById('liveAlertBtn')
-
-					function alert(message, type) {
-					var wrapper = document.createElement('div')
-					wrapper.innerHTML = '<div class="alert alert-' + type + ' alert-dismissible" role="alert">' + message + '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>'
-
-					alertPlaceholder.append(wrapper)
-					}
-
-					if (alertTrigger) {
-					alertTrigger.addEventListener('click', function () {
-						alert('Debes ingresar datos válidos', 'danger')
-					})
-					}
-					</script>
+      <div class="dark1">
+        <p>Por motivos de seguridad, tu clave olvidada debe ser reemplazada por una nueva (no recuperada), para ésto, ingresa el mail que registraste en nuestra página.</p>
+      	<form action="Login.html" class="needs-validation" novalidate>
+				<div class="row">
+					<div class="col-md-12">
+            <label for="for="validationUsername""></label>
+						<input  type="email" style="background-color: #e0e3e4;" class="form-control" id="validationUsername" placeholder="usuario@tuemail.com *" required>
+            <div class="invalid-feedback">
+            Dirección de email no válida.<br>
+            <a href="Register.html">¿Quieres crear una cuenta?</a>
+          </div>
+          <br>
+					<div  id="liveAlertPlaceholder"></div>
+          <p class="centrado">
+            <input type="submit" class="site-btn btn-full" id="liveAlertBtn" value="Continuar" >
+          </p>
+					</div>
+          </div>
+			</form>
+      </div>
+      </div>
+      </div>
 
 <!-- Footer section -->
 <div class="footer-top">
@@ -202,7 +169,6 @@
 	<script src="../js/jquery.nicescroll.min.js"></script>
 	<script src="../js/main.js"></script>
 	<script src="../js/login.js"></script>
-	<!--Script de Validaciones tomado de bootstrap-->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 	<script type="text/jscript">
 	// Example starter JavaScript for disabling form submissions if there are invalid fields
@@ -226,6 +192,24 @@
 	    })
 	})()
 	</script>
+	<!--Script de alerta-->
+						<script>
+						var alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+						var alertTrigger = document.getElementById('liveAlertBtn')
+
+						function alert(message, type) {
+						var wrapper = document.createElement('div')
+						wrapper.innerHTML = '<div class="alert alert-' + type + ' alert-dismissible" role="alert">' + message + '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>'
+
+						alertPlaceholder.append(wrapper)
+						}
+
+						if (alertTrigger) {
+						alertTrigger.addEventListener('click', function () {
+							alert('Debes ingresar datos válidos', 'danger')
+						})
+						}
+						</script>
 
 </body>
 </html>
